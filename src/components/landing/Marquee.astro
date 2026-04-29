@@ -1,0 +1,26 @@
+---
+const items = [
+  "spend by day",
+  "spend by project",
+  "spend by tool",
+  "spend by model",
+  "shell commands",
+  "MCP servers",
+  "cache hit rate",
+  "top sessions",
+  "currency conversion",
+  "export to CSV / SVG / PNG"
+];
+
+const repeated = [...items, ...items, ...items];
+---
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    {repeated.map((item) => (
+      <span class="marquee-item">
+        <span class="marquee-dot">◆</span>{item}
+      </span>
+    ))}
+  </div>
+</div>

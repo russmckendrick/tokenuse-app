@@ -1,0 +1,43 @@
+---
+import type { Release } from "../lib/releases";
+
+interface Props {
+  release: Release;
+  isLatestStable: boolean;
+  showAnchor?: boolean;
+}
+
+const { release, isLatestStable, showAnchor = false } = Astro.props;
+
+const dateFmt = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "short",
+  year: "numeric",
+});
+
+const dateLabel = (() => {
+  if (!release.publishedAt) return "";
+  const d = new Date(release.publishedAt);
+  return Number.isNaN(d.getTime()) ? "" : dateFmt.format(d);
+})();
+---
+
+<section class="release" id={showAnchor ? release.tag : undefined}>
+  <header class="release-header">
+    <h2 class="release-title">
+      {showAnchor ? (
+        <a href={`#${release.tag}`} class="release-anchor">{release.name}</a>
+      ) : (
+        release.name
+      )}
+    </h2>
+    <div class="release-meta">
+      <span class="release-tag">{release.tag}</span>
+      {dateLabel && <time datetime={release.publishedAt}>{dateLabel}</time>}
+      {isLatestStable && <span class="release-badge">Latest</span>}
+      {release.prerelease && <span class="release-badge release-badge-pre">Prerelease</span>}
+      <a class="release-link" href={release.url} target="_blank" rel="noopener noreferrer">View on GitHub -&gt;</a>
+    </div>
+  </header>
+  <div class="release-body" set:html={release.bodyHtml}></div>
+</section>

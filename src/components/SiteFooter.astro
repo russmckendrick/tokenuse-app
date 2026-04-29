@@ -1,0 +1,42 @@
+---
+import Logomark from "./Logomark.astro";
+
+const githubUrl = "https://github.com/russmckendrick/tokenuse";
+---
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <Logomark color="#d4a574" />
+      <span class="brand-word">token use</span>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <div class="footer-h">Product</div>
+        <a href="/#dashboard">Dashboard</a>
+        <a href="/#tools">Supported tools</a>
+        <a href="/#install">Install</a>
+        <a href={githubUrl}>GitHub</a>
+      </div>
+      <div>
+        <div class="footer-h">Docs</div>
+        <a href="/docs/quick-start/">Quick start</a>
+        <a href="/docs/architecture/">Architecture</a>
+        <a href="/docs/tools/">Tool ingestion</a>
+        <a href="/releases/">Releases</a>
+        <a href="/docs/quick-start/#keyboard">Keybindings</a>
+      </div>
+      <div>
+        <div class="footer-h">Source</div>
+        <a href={`${githubUrl}/issues`}>Issues</a>
+        <a href={`${githubUrl}/discussions`}>Discussions</a>
+        <a href={`${githubUrl}/blob/main/LICENSE`}>License</a>
+        <a href={`${githubUrl}/tree/main/docs`}>Repository docs</a>
+      </div>
+    </div>
+    <div class="footer-line">
+      <span>2026 tokenuse - all your tokens, all on your machine.</span>
+      <span>v0.1.0</span>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,63 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro";
+---
+
+<DocsLayout title="Architecture" description="The tokenuse startup flow, aggregation model, pricing, export, and configuration architecture.">
+  <p class="docs-eyebrow">ARCHITECTURE</p>
+  <h1>Simple on purpose</h1>
+  <p class="docs-lede">
+    tokenuse reads local session files, normalizes them to one record shape, aggregates in memory, and renders a terminal
+    dashboard. There is no daemon and no file watcher.
+  </p>
+
+  <h2>Startup flow</h2>
+  <ol>
+    <li>Handle CLI flags such as <code>--list-projects</code>, <code>--refresh-prices</code>, and <code>--generate-currency-json</code>.</li>
+    <li>Load <code>config.json</code> and <code>rates.json</code> when launching the dashboard.</li>
+    <li>Discover local sources for every registered tool adapter.</li>
+    <li>Parse local files into normalized call records.</li>
+    <li>Render live data, or sample data if no calls survive ingestion.</li>
+  </ol>
+
+  <h2>Normalized record</h2>
+  <p>
+    Every adapter emits a common record with tool, model, token buckets, cache buckets, reasoning tokens, cost, tool calls,
+    shell commands, timestamp, session id, project identity, and a dedup key.
+  </p>
+
+  <h2>Aggregation</h2>
+  <p>
+    The dashboard filters calls by period, tool, and project, then builds summary totals, daily activity, project spend,
+    project/tool rows, top sessions, model spend, core tools, shell commands, and MCP server panels.
+  </p>
+
+  <h2>Pages and modals</h2>
+  <p>
+    The TUI is a small state machine over Dashboard, Usage, Session, and Config pages, with project picker, currency picker,
+    session picker, export picker, and help overlays.
+  </p>
+
+  <h2>Export</h2>
+  <p>
+    Press <kbd>e</kbd> on the dashboard to export the current filtered view. Output lands in
+    <code>&lt;config dir&gt;/tokenuse/exports/</code>, timestamped and slugged by active filters.
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>Format</th><th>Output</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>JSON</td><td>Pretty-printed dashboard data</td></tr>
+      <tr><td>CSV</td><td>One file per dashboard panel</td></tr>
+      <tr><td>SVG</td><td>One multi-panel dashboard render</td></tr>
+      <tr><td>PNG</td><td>Same dashboard render, rasterized</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Configuration and currency</h2>
+  <p>
+    Runtime settings live under the platform config directory in <code>tokenuse</code>. USD is the default display currency,
+    while calculated spend remains stored internally as USD.
+  </p>
+</DocsLayout>

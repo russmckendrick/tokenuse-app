@@ -1,0 +1,36 @@
+---
+import DocsLayout from "../../layouts/DocsLayout.astro";
+import ReleaseArticle from "../../components/ReleaseArticle.astro";
+import ReleasePager from "../../components/ReleasePager.astro";
+import { getReleases, type Release } from "../../lib/releases";
+
+export async function getStaticPaths() {
+  const releases = await getReleases();
+  const latestStableTag = releases.find((release) => !release.prerelease)?.tag;
+
+  return releases.map((release, index) => ({
+    params: { tag: release.tag },
+    props: {
+      release,
+      isLatestStable: release.tag === latestStableTag,
+      older: releases[index + 1] ?? null,
+      newer: releases[index - 1] ?? null,
+    },
+  }));
+}
+
+interface Props {
+  release: Release;
+  isLatestStable: boolean;
+  older: Release | null;
+  newer: Release | null;
+}
+
+const { release, isLatestStable, older, newer } = Astro.props;
+---
+
+<DocsLayout title={`${release.tag} release`} description={release.name}>
+  <a class="release-breadcrumb" href="/releases/">All releases</a>
+  <ReleaseArticle release={release} isLatestStable={isLatestStable} />
+  <ReleasePager newer={newer} older={older} />
+</DocsLayout>

@@ -1,0 +1,35 @@
+---
+import type { Release } from "../lib/releases";
+
+interface Props {
+  newer: Release | null;
+  older: Release | null;
+}
+
+const { newer, older } = Astro.props;
+
+function hrefFor(release: Release): string {
+  return `/releases/${release.tag}/`;
+}
+---
+
+{(newer || older) && (
+  <nav class="release-pager" aria-label="Release pagination">
+    {newer ? (
+      <a class="release-pager-link" href={hrefFor(newer)}>
+        <span class="release-pager-label">Newer release</span>
+        <span>{newer.tag}</span>
+      </a>
+    ) : (
+      <span class="release-pager-placeholder" aria-hidden="true"></span>
+    )}
+    {older ? (
+      <a class="release-pager-link release-pager-link-older" href={hrefFor(older)}>
+        <span class="release-pager-label">Older release</span>
+        <span>{older.tag}</span>
+      </a>
+    ) : (
+      <span class="release-pager-placeholder" aria-hidden="true"></span>
+    )}
+  </nav>
+)}

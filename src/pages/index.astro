@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteNav from "../components/SiteNav.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import Hero from "../components/landing/Hero.astro";
+import Marquee from "../components/landing/Marquee.astro";
+import DashboardSection from "../components/landing/DashboardSection.astro";
+import ToolsSection from "../components/landing/ToolsSection.astro";
+import FeaturesSection from "../components/landing/FeaturesSection.astro";
+import HowSection from "../components/landing/HowSection.astro";
+import PromiseSection from "../components/landing/PromiseSection.astro";
+import InstallSection from "../components/landing/InstallSection.astro";
+---
+
+<BaseLayout>
+  <SiteNav />
+  <main>
+    <Hero />
+    <Marquee />
+    <DashboardSection />
+    <ToolsSection />
+    <FeaturesSection />
+    <HowSection />
+    <PromiseSection />
+    <InstallSection />
+  </main>
+  <SiteFooter />
+</BaseLayout>

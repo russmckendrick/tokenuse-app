@@ -1,0 +1,39 @@
+---
+const steps = [
+  {
+    n: "01",
+    title: "Clone once, run anywhere",
+    body: "A small Rust TUI with no API key, proxy, telemetry endpoint, or background watcher.",
+    code: "git clone https://github.com/russmckendrick/tokenuse && cd tokenuse"
+  },
+  {
+    n: "02",
+    title: "Ingest what's already on disk",
+    body: "On launch, tokenuse scans local session files from every supported tool, normalizes projects, and folds paths to their nearest Git root.",
+    code: "cargo run"
+  },
+  {
+    n: "03",
+    title: "Drill, filter, export",
+    body: "Pivot by day, project, tool, model, shell command, or MCP server. Hit e to export the current view as JSON, CSV, SVG or PNG.",
+    code: "[e] -> exports/tokenuse-20260429T160054-week-all.json"
+  }
+];
+---
+
+<section id="how" class="section section-how">
+  <div class="section-head">
+    <div class="section-eyebrow">HOW IT WORKS</div>
+    <h2 class="section-h2">Three steps. No phones required.</h2>
+  </div>
+  <div class="how-grid">
+    {steps.map((step) => (
+      <article class="how-card">
+        <div class="how-num">{step.n}</div>
+        <h3 class="how-title">{step.title}</h3>
+        <p class="how-body">{step.body}</p>
+        <pre class="how-code">{step.code}</pre>
+      </article>
+    ))}
+  </div>
+</section>

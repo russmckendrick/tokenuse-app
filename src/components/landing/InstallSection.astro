@@ -1,0 +1,33 @@
+<section id="install" class="section section-install">
+  <div class="install-card">
+    <div class="install-head">
+      <div class="section-eyebrow on-dark">GET STARTED</div>
+      <h2 class="install-h2">Pick up the receiver.</h2>
+      <p class="install-sub">A local Rust TUI. Use a terminal at least 120x40 for the full dashboard.</p>
+    </div>
+
+    <div class="install-tabs" role="tablist" aria-label="Install commands">
+      <input checked type="radio" name="install-command" id="install-run" />
+      <label class="install-tab" for="install-run">run</label>
+      <input type="radio" name="install-command" id="install-features" />
+      <label class="install-tab" for="install-features">features</label>
+      <input type="radio" name="install-command" id="install-list" />
+      <label class="install-tab" for="install-list">helpers</label>
+
+      <div class="install-panels">
+        <pre class="install-cmd install-panel-run"><span class="install-prompt">$</span> git clone https://github.com/russmckendrick/tokenuse && cd tokenuse
+<span class="install-prompt">$</span> cargo run</pre>
+        <pre class="install-cmd install-panel-features"><span class="install-prompt">$</span> cargo run --features refresh-currency,refresh-prices</pre>
+        <pre class="install-cmd install-panel-list"><span class="install-prompt">$</span> cargo run -- --list-projects</pre>
+      </div>
+    </div>
+
+    <div class="install-foot">
+      <span>macOS - Linux - Windows (WSL)</span>
+      <span>-</span>
+      <span>MIT licensed</span>
+      <span>-</span>
+      <span>v0.1.0</span>
+    </div>
+  </div>
+</section>

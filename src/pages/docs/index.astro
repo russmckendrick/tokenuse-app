@@ -1,0 +1,45 @@
+---
+import DocsLayout from "../../layouts/DocsLayout.astro";
+---
+
+<DocsLayout
+  title="Documentation"
+  description="Start here for tokenuse installation, supported tools, architecture, keyboard shortcuts, and local-first behavior."
+>
+  <p class="docs-eyebrow">START HERE</p>
+  <h1>Token Use documentation</h1>
+  <p class="docs-lede">
+    `tokenuse` is a local-only Rust TUI for exploring AI coding tool token and cost usage.
+    It reads session files already written on your machine, ingests them once at startup,
+    and renders a dense terminal dashboard.
+  </p>
+
+  <div class="docs-card-grid">
+    <a class="docs-card" href="/docs/quick-start/">
+      <span>01</span>
+      <h2>Quick start</h2>
+      <p>Run the TUI, understand the dashboard, learn the keyboard map, and configure local currency/pricing snapshots.</p>
+    </a>
+    <a class="docs-card" href="/docs/tools/">
+      <span>02</span>
+      <h2>Tool ingestion</h2>
+      <p>See which local files tokenuse reads for Claude Code, Codex, Cursor, and GitHub Copilot.</p>
+    </a>
+    <a class="docs-card" href="/docs/architecture/">
+      <span>03</span>
+      <h2>Architecture</h2>
+      <p>Follow the startup flow, normalized record shape, aggregation pipeline, pricing, export, and configuration model.</p>
+    </a>
+    <a class="docs-card" href="/releases/">
+      <span>04</span>
+      <h2>Releases</h2>
+      <p>Read the latest release notes, pulled from GitHub with a checked-in fallback for offline builds.</p>
+    </a>
+  </div>
+
+  <h2>Local-first by default</h2>
+  <p>
+    There is no API key, proxy, telemetry endpoint, or background watcher. The default build has no network dependency;
+    the only networked paths are explicit pricing and currency refresh features.
+  </p>
+</DocsLayout>

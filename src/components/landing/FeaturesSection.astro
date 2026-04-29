@@ -1,0 +1,63 @@
+---
+import Sparkline from "./Sparkline.astro";
+---
+
+<section class="section section-features">
+  <div class="features-row">
+    <article class="plaque feature-plaque feature-spend">
+      <div class="plaque-inner">
+        <div class="feature-eyebrow">SPEND BY</div>
+        <ul class="feature-list">
+          <li><span class="bullet">&bull;</span> day</li>
+          <li><span class="bullet">&bull;</span> project</li>
+          <li><span class="bullet">&bull;</span> tool</li>
+          <li><span class="bullet">&bull;</span> model</li>
+          <li><span class="bullet">&bull;</span> shell command</li>
+          <li><span class="bullet">&bull;</span> mcp server</li>
+        </ul>
+        <div class="feature-script">
+          Real insights.<br />
+          Zero cloud.<br />
+          100% local.
+        </div>
+      </div>
+    </article>
+
+    <article class="plaque feature-plaque feature-ingest">
+      <div class="plaque-inner">
+        <div class="feature-eyebrow">INGEST ONCE.<br />EXPLORE EVERYTHING.</div>
+        <div class="feature-chart">
+          <Sparkline values={[8, 14, 9, 18, 22, 17, 28, 24, 31, 26, 38, 34, 42, 37, 49, 55]} />
+          <div class="feature-chart-axis">
+            <span>jan</span><span>mar</span><span>may</span><span>jul</span><span>sep</span>
+          </div>
+        </div>
+        <div class="feature-script">
+          Built for<br />
+          power users.<br />
+          By power users.
+        </div>
+      </div>
+    </article>
+
+    <article class="plaque feature-plaque feature-keys">
+      <div class="plaque-inner">
+        <div class="feature-eyebrow">KEYBOARD ONLY.</div>
+        <div class="feature-keys">
+          <div class="kb-row"><kbd>1</kbd><span>today</span></div>
+          <div class="kb-row"><kbd>2</kbd><span>7 days</span></div>
+          <div class="kb-row"><kbd>3</kbd><span>30 days</span></div>
+          <div class="kb-row"><kbd>p</kbd><span>project picker</span></div>
+          <div class="kb-row"><kbd>s</kbd><span>session drill</span></div>
+          <div class="kb-row"><kbd>e</kbd><span>export view</span></div>
+          <div class="kb-row"><kbd>?</kbd><span>full keymap</span></div>
+        </div>
+        <div class="feature-script">
+          No mouse.<br />
+          No menus.<br />
+          Just answers.
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

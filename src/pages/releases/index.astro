@@ -1,0 +1,30 @@
+---
+import DocsLayout from "../../layouts/DocsLayout.astro";
+import ReleaseArticle from "../../components/ReleaseArticle.astro";
+import ReleasePager from "../../components/ReleasePager.astro";
+import { getReleases } from "../../lib/releases";
+
+const releases = await getReleases();
+const latestStableTag = releases.find((release) => !release.prerelease)?.tag;
+const latest = releases.find((release) => !release.prerelease) ?? releases[0] ?? null;
+const older = latest ? releases[releases.findIndex((release) => release.tag === latest.tag) + 1] ?? null : null;
+---
+
+<DocsLayout title="Releases" description="Latest tokenuse release notes, pulled from GitHub with a checked-in fallback.">
+  <p class="docs-eyebrow">RELEASES</p>
+  <h1>Releases</h1>
+  <p class="docs-lede">
+    Latest <code>tokenuse</code> release notes, pulled from
+    <a href="https://github.com/russmckendrick/tokenuse/releases" target="_blank" rel="noopener noreferrer">GitHub</a>
+    at build time with a local fallback for offline builds.
+  </p>
+
+  {!latest && <p>No releases yet.</p>}
+
+  {latest && (
+    <>
+      <ReleaseArticle release={latest} isLatestStable={latest.tag === latestStableTag} />
+      <ReleasePager newer={null} older={older} />
+    </>
+  )}
+</DocsLayout>

@@ -1,0 +1,24 @@
+---
+import Logomark from "./Logomark.astro";
+
+const githubUrl = "https://github.com/russmckendrick/tokenuse";
+---
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <Logomark color="#d4a574" />
+      <span class="brand-word">token use</span>
+    </a>
+    <div class="nav-links" aria-label="Primary navigation">
+      <a href="/#dashboard">Dashboard</a>
+      <a href="/#tools">Tools</a>
+      <a href="/#how">How it works</a>
+      <a href="/docs/">Docs</a>
+      <a href="/releases/">Releases</a>
+      <a href={githubUrl} class="nav-cta">
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+</nav>

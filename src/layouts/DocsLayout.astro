@@ -1,0 +1,42 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import SiteNav from "../components/SiteNav.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const path = Astro.url.pathname;
+const navItems = [
+  { href: "/docs/", label: "Overview" },
+  { href: "/docs/quick-start/", label: "Quick start" },
+  { href: "/docs/tools/", label: "Tool ingestion" },
+  { href: "/docs/architecture/", label: "Architecture" },
+  { href: "/releases/", label: "Releases" }
+];
+
+function isActive(href: string): boolean {
+  return path === href || (href === "/releases/" && path.startsWith("/releases/"));
+}
+---
+
+<BaseLayout title={`${title} - token use docs`} description={description} bodyClass="docs-body">
+  <SiteNav />
+  <main class="docs-shell">
+    <aside class="docs-sidebar" aria-label="Documentation navigation">
+      <a class="docs-sidebar-title" href="/docs/">Documentation</a>
+      <nav>
+        {navItems.map((item) => (
+          <a class:list={["docs-side-link", isActive(item.href) && "active"]} href={item.href}>{item.label}</a>
+        ))}
+      </nav>
+    </aside>
+    <article class="docs-content">
+      <slot />
+    </article>
+  </main>
+  <SiteFooter />
+</BaseLayout>

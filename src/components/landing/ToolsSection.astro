@@ -1,0 +1,62 @@
+---
+import ToolMark from "./ToolMark.astro";
+
+const tools = [
+  {
+    kind: "claude",
+    name: "Claude Code",
+    src: "~/.claude/projects/",
+    lines: ["Exact tokens and cache reads", "Tool calls plus Bash invocations", "MCP tool usage"]
+  },
+  {
+    kind: "codex",
+    name: "Codex",
+    src: "~/.codex/sessions/**/rollout-*.jsonl",
+    lines: ["Per-turn token_count events", "Cached input plus reasoning output", "Tool call ledger"]
+  },
+  {
+    kind: "cursor",
+    name: "Cursor",
+    src: "Cursor state.vscdb",
+    lines: ["Exact tokens when present", "chars / 4 estimate fallback", "Agent KV rows"]
+  },
+  {
+    kind: "copilot",
+    name: "GitHub Copilot",
+    src: "~/.copilot/session-state/",
+    lines: ["Legacy output tokens", "VS Code Chat transcripts", "Estimated transcript usage"]
+  }
+] as const;
+---
+
+<section id="tools" class="section section-tools">
+  <div class="section-head">
+    <div class="section-eyebrow">SUPPORTED TOOLS</div>
+    <h2 class="section-h2">Four operators, one switchboard.</h2>
+    <p class="section-lede">
+      Token Use reads the session files your tools already write to disk. No proxying, no extension,
+      no rewiring your editor. Plug it in and the calls just show up.
+    </p>
+  </div>
+
+  <div class="tools-grid">
+    {tools.map((tool) => (
+      <article class="tool-card">
+        <div class="tool-card-plate">
+          <span class="tool-card-mark"><ToolMark kind={tool.kind} /></span>
+          <span class="tool-card-name">{tool.name}</span>
+        </div>
+        <div class="tool-card-body">
+          <div class="tool-card-src">{tool.src}</div>
+          <ul class="tool-card-list">
+            {tool.lines.map((line) => <li>{line}</li>)}
+          </ul>
+        </div>
+        <div class="tool-card-foot">
+          <span class="tool-card-status">live</span>
+          <a class="tool-card-calls" href="/docs/tools/">parser docs -&gt;</a>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

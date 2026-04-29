@@ -1,0 +1,25 @@
+---
+import dashboardOverview from "../../assets/dashboard-overview.svg?url";
+---
+
+<figure class="dashboard-shell" aria-label="Actual tokenuse dashboard export in a terminal frame">
+  <div class="dashboard-shell-bar" aria-hidden="true">
+    <div class="dashboard-shell-dots">
+      <span class="dashboard-shell-dot dashboard-shell-dot-red"></span>
+      <span class="dashboard-shell-dot dashboard-shell-dot-yellow"></span>
+      <span class="dashboard-shell-dot dashboard-shell-dot-green"></span>
+    </div>
+    <div class="dashboard-shell-title">cargo run -- tokenuse export</div>
+    <div class="dashboard-shell-meta">SVG</div>
+  </div>
+  <div class="dashboard-shell-screen">
+    <img
+      src={dashboardOverview}
+      width="1800"
+      height="1608"
+      alt="The tokenuse terminal dashboard showing cost, calls, sessions, cache hit, daily activity, model spend, project spend by tool, shell commands, MCP servers, and core tools."
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+</figure>

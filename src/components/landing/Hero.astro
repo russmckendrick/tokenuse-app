@@ -1,0 +1,55 @@
+---
+import wideHero from "../../assets/hero-wide.png";
+import tallHero from "../../assets/hero-tall.png";
+---
+
+<header id="top" class="hero">
+  <div class="hero-image-wrap">
+    <picture>
+      <source media="(max-width: 760px)" srcset={tallHero.src} width={tallHero.width} height={tallHero.height} />
+      <img
+        class="hero-image"
+        src={wideHero.src}
+        width={wideHero.width}
+        height={wideHero.height}
+        alt="A broadcast studio set for token use, with operators and panels for AI coding tools."
+        fetchpriority="high"
+        decoding="async"
+      />
+    </picture>
+    <div class="hero-vignette"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="hero-foot-row">
+      <div class="hero-foot-left">
+        <div class="hero-eyebrow">v0.1.0 - local Rust TUI</div>
+        <h1 class="hero-h1">Where did your <span class="ink">tokens</span> go last week?</h1>
+        <p class="hero-sub">
+          A local-first TUI that ingests every Claude Code, Codex, Cursor and Copilot session already on your machine,
+          and tells you exactly what they cost by day, project, tool, model, shell command, or MCP server.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#install"><span class="btn-key">&gt;</span> cargo run</a>
+          <a class="btn btn-ghost" href="#dashboard">See the dashboard <span aria-hidden="true">-&gt;</span></a>
+        </div>
+        <div class="hero-meta">
+          <span>No API keys</span>
+          <span>No proxy</span>
+          <span>No telemetry</span>
+          <span>100% local</span>
+        </div>
+      </div>
+
+      <div class="hero-foot-right">
+        <div class="callcard">
+          <div class="callcard-strip"></div>
+          <div class="callcard-label">NOW INGESTING</div>
+          <div class="callcard-num">14,392 calls</div>
+          <div class="callcard-sub">across 4 tools - 23 projects - sample dashboard</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
