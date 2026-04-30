@@ -32,7 +32,7 @@ jobs:
     name: "🏗️ Build and Deploy"
     runs-on: ubuntu-latest
     env:
-      TOKENUSE_SOURCE_DIR: tokenuse-source
+      TOKENUSE_SOURCE_DIR: .generated/tokenuse-source
       TOKENUSE_SOURCE_REF: ${{ github.event.client_payload.release_tag || 'main' }}
 
     steps:
@@ -44,7 +44,7 @@ jobs:
         with:
           repository: russmckendrick/tokenuse
           ref: ${{ env.TOKENUSE_SOURCE_REF }}
-          path: tokenuse-source
+          path: .generated/tokenuse-source
 
       - name: "🌸 Setup PNPM"
         uses: pnpm/action-setup@v6
