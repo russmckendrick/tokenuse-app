@@ -2,41 +2,93 @@
 import BaseLayout from "./BaseLayout.astro";
 import SiteNav from "../components/SiteNav.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import sourceInfo from "../../.generated/tokenuse-docs/source.json";
+import { docsNavGroups } from "../lib/docs";
+import { getReleases } from "../lib/releases";
 
 interface Props {
   title: string;
   description?: string;
+  headings?: Array<{
+    depth: number;
+    slug: string;
+    text: string;
+  }>;
 }
 
-const { title, description } = Astro.props;
+const { title, description, headings = [] } = Astro.props;
 const path = Astro.url.pathname;
-const navItems = [
-  { href: "/docs/", label: "Overview" },
-  { href: "/docs/quick-start/", label: "Quick start" },
-  { href: "/docs/tools/", label: "Tool ingestion" },
-  { href: "/docs/architecture/", label: "Architecture" },
-  { href: "/releases/", label: "Releases" }
-];
+const sourceCommit = `${sourceInfo.shortCommit ?? "local"}${sourceInfo.dirty ? " + local changes" : ""}`;
+const sourceHref = sourceInfo.commit
+  ? `https://github.com/russmckendrick/tokenuse/tree/${sourceInfo.commit}/docs`
+  : "https://github.com/russmckendrick/tokenuse/tree/main/docs";
+const hasHeadings = headings.length > 0;
+const releases = await getReleases();
+const navGroups = docsNavGroups.map((group) => {
+  if (group.label !== "Project") return group;
+
+  return {
+    ...group,
+    items: group.items.flatMap((item) => {
+      if (item.href !== "/releases/") return [item];
+
+      return [
+        item,
+        ...releases.map((release) => ({
+          id: `release/${release.tag}`,
+          entryId: "",
+          href: `/releases/${release.tag}/`,
+          title: `${release.tag} release`,
+          navLabel: release.tag,
+          eyebrow: "GitHub",
+          description: release.name,
+          level: 1,
+        })),
+      ];
+    }),
+  };
+});
 
 function isActive(href: string): boolean {
-  return path === href || (href === "/releases/" && path.startsWith("/releases/"));
+  if (href === "/releases/") return path === href;
+  return path === href;
 }
 ---
 
 <BaseLayout title={`${title} - token use docs`} description={description} bodyClass="docs-body">
   <SiteNav />
-  <main class="docs-shell">
+  <main class:list={["docs-shell", hasHeadings && "docs-shell-has-toc"]}>
     <aside class="docs-sidebar" aria-label="Documentation navigation">
       <a class="docs-sidebar-title" href="/docs/">Documentation</a>
       <nav>
-        {navItems.map((item) => (
-          <a class:list={["docs-side-link", isActive(item.href) && "active"]} href={item.href}>{item.label}</a>
+        {navGroups.map((group) => (
+          <div class="docs-nav-group">
+            <p>{group.label}</p>
+            {group.items.map((item) => (
+              <a class:list={["docs-side-link", item.level === 1 && "nested", isActive(item.href) && "active"]} href={item.href}>{item.navLabel}</a>
+            ))}
+          </div>
         ))}
       </nav>
+      <a class="docs-source-note" href={sourceHref} target="_blank" rel="noopener noreferrer">
+        Synced from tokenuse <span>{sourceCommit}</span>
+      </a>
     </aside>
     <article class="docs-content">
       <slot />
     </article>
+    {hasHeadings && (
+      <aside class="docs-toc" aria-label="On this page">
+        <p>On this page</p>
+        <nav>
+          {headings.map((heading) => (
+            <a class:list={["docs-toc-link", `depth-${heading.depth}`]} href={`#${heading.slug}`}>
+              {heading.text}
+            </a>
+          ))}
+        </nav>
+      </aside>
+    )}
   </main>
   <SiteFooter />
 </BaseLayout>

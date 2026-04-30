@@ -1,0 +1,24 @@
+---
+import DocsPage from "../../components/DocsPage.astro";
+import { docsPages, getDocsEntry, getDocsPageBySlug, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";
+
+export async function getStaticPaths() {
+  return docsPages
+    .filter((page) => page.href !== "/docs/")
+    .map((page) => ({
+      params: { slug: slugForDocsPage(page) },
+      props: { page },
+    }));
+}
+
+interface Props {
+  page: DocsPageMeta;
+}
+
+const page = Astro.props.page ?? getDocsPageBySlug(Astro.params.slug);
+if (!page) throw new Error(`Unknown docs route: ${Astro.params.slug ?? ""}`);
+
+const entry = await getDocsEntry(page);
+---
+
+<DocsPage entry={entry} page={page} />

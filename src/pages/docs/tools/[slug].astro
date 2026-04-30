@@ -1,0 +1,13 @@
+---
+import RedirectPage from "../../../components/RedirectPage.astro";
+
+export function getStaticPaths() {
+  return ["claude-code", "codex", "cursor", "copilot"].map((slug) => ({
+    params: { slug },
+  }));
+}
+
+const to = `/docs/development/tools/${Astro.params.slug}/`;
+---
+
+<RedirectPage title="Tool docs moved" to={to} />
