@@ -1,0 +1,129 @@
+---
+import { render } from "astro:content";
+import desktopApp from "../assets/desktop-app.png";
+import DocsLayout from "../layouts/DocsLayout.astro";
+import { getDocsPageById, overviewCardIds, type DocsEntry, type DocsPageMeta } from "../lib/docs";
+
+interface Props {
+  entry: DocsEntry;
+  page: DocsPageMeta;
+}
+
+const { entry, page } = Astro.props;
+const { Content, headings } = await render(entry);
+const tocHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 3);
+const isOverview = page.id === "overview";
+const isDesktop = page.id === "guides/desktop-usage";
+const overviewCards = overviewCardIds.map((id) => getDocsPageById(id));
+---
+
+<DocsLayout title={page.title} description={page.description} headings={tocHeadings}>
+  <header class="docs-page-head">
+    <p class="docs-eyebrow">{page.eyebrow}</p>
+    <h1>{page.title}</h1>
+    <p class="docs-lede">{page.description}</p>
+  </header>
+
+  {isOverview && (
+    <div class="docs-card-grid docs-card-grid-featured">
+      {overviewCards.map((card, index) => (
+        <a class:list={["docs-card", card.id === "guides/desktop-usage" && "docs-card-image"]} href={card.href}>
+          {card.id === "guides/desktop-usage" && (
+            <img
+              src={desktopApp.src}
+              width={desktopApp.width}
+              height={desktopApp.height}
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          )}
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          <h2>{card.navLabel}</h2>
+          <p>{card.description}</p>
+        </a>
+      ))}
+    </div>
+  )}
+
+  {isDesktop && (
+    <figure class="docs-feature-figure">
+      <img
+        src={desktopApp.src}
+        width={desktopApp.width}
+        height={desktopApp.height}
+        alt="Token Use desktop app showing overview metrics, filters, model spend, project spend, and shell command panels."
+        loading="eager"
+        decoding="async"
+      />
+      <figcaption>The desktop shell uses the same local archive, filters, refresh, config, and export logic as the TUI.</figcaption>
+    </figure>
+  )}
+
+  <div class="docs-markdown">
+    <Content />
+  </div>
+
+  <script>
+    const mermaidConfig = {
+      startOnLoad: false,
+      securityLevel: "strict" as const,
+      theme: "base" as const,
+      themeVariables: {
+        background: "#1c1612",
+        primaryColor: "#2a1f17",
+        primaryTextColor: "#f4ead6",
+        primaryBorderColor: "#d4a574",
+        lineColor: "#d4a574",
+        secondaryColor: "#34261c",
+        tertiaryColor: "#221a14",
+        noteBkgColor: "#34261c",
+        noteTextColor: "#f4ead6",
+        fontFamily: "JetBrains Mono, ui-monospace, monospace",
+      },
+    };
+
+    function sourceFromBlock(block: HTMLPreElement) {
+      const code = block.querySelector("code");
+      return (code ?? block).textContent?.trim();
+    }
+
+    async function renderMermaidDiagrams() {
+      const blocks = new Set<HTMLPreElement>();
+      document
+        .querySelectorAll<HTMLPreElement>(".docs-markdown pre[data-language='mermaid']")
+        .forEach((block) => blocks.add(block));
+      document.querySelectorAll<HTMLElement>(".docs-markdown pre code.language-mermaid").forEach((code) => {
+        const block = code.closest("pre");
+        if (block) blocks.add(block);
+      });
+
+      for (const block of blocks) {
+        const source = sourceFromBlock(block);
+        if (!source) continue;
+
+        const diagram = document.createElement("div");
+        diagram.className = "docs-mermaid mermaid";
+        diagram.textContent = source;
+        block.replaceWith(diagram);
+      }
+
+      const diagrams = Array.from(document.querySelectorAll<HTMLElement>(".docs-markdown .docs-mermaid"));
+      if (diagrams.length === 0) return;
+
+      try {
+        const { default: mermaid } = await import("mermaid");
+        mermaid.initialize(mermaidConfig);
+        await mermaid.run({ nodes: diagrams });
+      } catch (error) {
+        console.warn("Unable to render Mermaid diagrams", error);
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => void renderMermaidDiagrams(), { once: true });
+    } else {
+      void renderMermaidDiagrams();
+    }
+  </script>
+</DocsLayout>
