@@ -1,3 +1,7 @@
 allowBuilds:
   esbuild: true
   sharp: true
+  workerd: true
+overrides:
+  uuid@<14.0.0: '>=14.0.0'
+  yaml@>=2.0.0 <2.8.3: '>=2.8.3'

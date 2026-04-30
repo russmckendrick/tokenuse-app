@@ -1,0 +1,17 @@
+{
+	"compatibility_date": "2026-04-30",
+	"compatibility_flags": ["global_fetch_strictly_public"],
+	"name": "tokenuse-app",
+	"main": "@astrojs/cloudflare/entrypoints/server",
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS"
+	},
+	"routes": [
+		{ "pattern": "tokenuse.app", "custom_domain": true },
+		{ "pattern": "www.tokenuse.app", "custom_domain": true }
+	],
+	"observability": {
+		"enabled": true
+	}
+}

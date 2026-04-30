@@ -26,6 +26,7 @@ coverage/
 # Deployment output
 .vercel/
 .netlify/
+.wrangler/
 
 # Editor and OS files
 .DS_Store
