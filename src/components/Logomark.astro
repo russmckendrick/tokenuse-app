@@ -1,4 +1,6 @@
 ---
+import { LOGOMARK_BARS, LOGOMARK_GRADIENT_STOPS, LOGOMARK_VIEWBOX } from "../lib/logomark.mjs";
+
 interface Props {
   size?: number;
   color?: string;
@@ -12,22 +14,21 @@ const {
   gradient = false,
   gradientId = "token-use-bars-gradient",
 } = Astro.props;
-const width = size * (440 / 560);
+const width = size * (LOGOMARK_VIEWBOX.width / LOGOMARK_VIEWBOX.height);
 const fill = gradient ? `url(#${gradientId})` : color;
 ---
 
-<svg width={width} height={size} viewBox="0 0 440 560" fill="none" aria-hidden="true">
+<svg width={width} height={size} viewBox={`0 0 ${LOGOMARK_VIEWBOX.width} ${LOGOMARK_VIEWBOX.height}`} fill="none" aria-hidden="true">
   {gradient && (
     <defs>
-      <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="560" gradientUnits="userSpaceOnUse">
-        <stop offset="0%" stop-color="#FFC06A"></stop>
-        <stop offset="45%" stop-color="#FF9A4D"></stop>
-        <stop offset="100%" stop-color="#F26A3D"></stop>
+      <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2={LOGOMARK_VIEWBOX.height} gradientUnits="userSpaceOnUse">
+        {LOGOMARK_GRADIENT_STOPS.map((stop) => (
+          <stop offset={`${stop.offset * 100}%`} stop-color={stop.color}></stop>
+        ))}
       </linearGradient>
     </defs>
   )}
-  <rect x="0" y="280" width="80" height="280" rx="16" fill={fill}></rect>
-  <rect x="120" y="160" width="80" height="400" rx="16" fill={fill}></rect>
-  <rect x="240" y="0" width="80" height="560" rx="16" fill={fill}></rect>
-  <rect x="360" y="120" width="80" height="440" rx="16" fill={fill}></rect>
+  {LOGOMARK_BARS.map((bar) => (
+    <rect x={bar.x} y={bar.y} width={bar.width} height={bar.height} rx={bar.rx} fill={fill}></rect>
+  ))}
 </svg>

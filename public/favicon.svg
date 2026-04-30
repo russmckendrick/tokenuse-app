@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="token-use-favicon-gradient" x1="0" y1="40.96" x2="0" y2="471.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFC06A"/>
+      <stop offset="45%" stop-color="#FF9A4D"/>
+      <stop offset="100%" stop-color="#F26A3D"/>
+    </linearGradient>
+  </defs>
+  <rect x="87.04" y="256" width="61.44" height="215.04" rx="12.288" fill="url(#token-use-favicon-gradient)"/>
+  <rect x="179.2" y="163.84" width="61.44" height="307.2" rx="12.288" fill="url(#token-use-favicon-gradient)"/>
+  <rect x="271.36" y="40.96" width="61.44" height="430.08" rx="12.288" fill="url(#token-use-favicon-gradient)"/>
+  <rect x="363.52" y="133.12" width="61.44" height="337.92" rx="12.288" fill="url(#token-use-favicon-gradient)"/>
+</svg>
