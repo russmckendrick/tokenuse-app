@@ -27,6 +27,9 @@ permissions:
   deployments: write
   pull-requests: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-and-deploy:
     name: "🏗️ Build and Deploy"
