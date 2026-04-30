@@ -3,26 +3,25 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SiteNav from "../components/SiteNav.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import Hero from "../components/landing/Hero.astro";
-import Marquee from "../components/landing/Marquee.astro";
 import DashboardSection from "../components/landing/DashboardSection.astro";
 import ToolsSection from "../components/landing/ToolsSection.astro";
-import FeaturesSection from "../components/landing/FeaturesSection.astro";
-import HowSection from "../components/landing/HowSection.astro";
-import PromiseSection from "../components/landing/PromiseSection.astro";
 import InstallSection from "../components/landing/InstallSection.astro";
+import { getLatestRelease } from "../lib/releases";
+
+const latestRelease = await getLatestRelease();
+const latestVersion = latestRelease?.tag ?? "latest release";
+const latestReleaseHref = latestRelease ? `/releases/${latestRelease.tag}/` : "/releases/";
 ---
 
-<BaseLayout>
+<BaseLayout
+  description="Token Use is a local-first TUI and macOS desktop app for exploring AI coding tool token and cost usage across Claude Code, Codex, Cursor, and GitHub Copilot."
+>
   <SiteNav />
   <main>
-    <Hero />
-    <Marquee />
+    <Hero latestVersion={latestVersion} releaseHref={latestReleaseHref} />
     <DashboardSection />
     <ToolsSection />
-    <FeaturesSection />
-    <HowSection />
-    <PromiseSection />
-    <InstallSection />
+    <InstallSection latestVersion={latestVersion} />
   </main>
   <SiteFooter />
 </BaseLayout>

@@ -1,33 +1,48 @@
+---
+interface Props {
+  latestVersion: string;
+}
+
+const { latestVersion } = Astro.props;
+---
+
 <section id="install" class="section section-install">
   <div class="install-card">
     <div class="install-head">
       <div class="section-eyebrow on-dark">GET STARTED</div>
-      <h2 class="install-h2">Pick up the receiver.</h2>
-      <p class="install-sub">A local Rust TUI. Use a terminal at least 120x40 for the full dashboard.</p>
+      <h2 class="install-h2">Install the current release.</h2>
+      <p class="install-sub">Use Homebrew on macOS, or pull the latest TUI binary from GitHub Releases for Linux and Windows.</p>
     </div>
 
     <div class="install-tabs" role="tablist" aria-label="Install commands">
-      <input checked type="radio" name="install-command" id="install-run" />
-      <label class="install-tab" for="install-run">run</label>
-      <input type="radio" name="install-command" id="install-features" />
-      <label class="install-tab" for="install-features">features</label>
-      <input type="radio" name="install-command" id="install-list" />
-      <label class="install-tab" for="install-list">helpers</label>
+      <input checked type="radio" name="install-command" id="install-macos" />
+      <label class="install-tab" for="install-macos">macOS</label>
+      <input type="radio" name="install-command" id="install-linux" />
+      <label class="install-tab" for="install-linux">Linux</label>
+      <input type="radio" name="install-command" id="install-windows" />
+      <label class="install-tab" for="install-windows">Windows</label>
 
       <div class="install-panels">
-        <pre class="install-cmd install-panel-run"><span class="install-prompt">$</span> git clone https://github.com/russmckendrick/tokenuse && cd tokenuse
-<span class="install-prompt">$</span> cargo run</pre>
-        <pre class="install-cmd install-panel-features"><span class="install-prompt">$</span> cargo run --features refresh-currency,refresh-prices</pre>
-        <pre class="install-cmd install-panel-list"><span class="install-prompt">$</span> cargo run -- --list-projects</pre>
+        <pre class="install-cmd install-panel-macos"><span class="install-prompt">$</span> brew install russmckendrick/tap/tokenuse
+<span class="install-prompt">$</span> tokenuse
+
+<span class="install-prompt">$</span> brew install --cask russmckendrick/tap/tokenuse
+<span class="install-prompt">$</span> open -a "Token Use"</pre>
+        <pre class="install-cmd install-panel-linux"><span class="install-prompt">$</span> curl -L -o tokenuse https://github.com/russmckendrick/tokenuse/releases/latest/download/tokenuse-linux-amd64
+<span class="install-prompt">$</span> chmod +x tokenuse
+<span class="install-prompt">$</span> sudo install -m 0755 tokenuse /usr/local/bin/tokenuse
+<span class="install-prompt">$</span> tokenuse</pre>
+        <pre class="install-cmd install-panel-windows"><span class="install-prompt">PS&gt;</span> Invoke-WebRequest -Uri "https://github.com/russmckendrick/tokenuse/releases/latest/download/tokenuse-windows-amd64.exe" -OutFile "tokenuse.exe"
+<span class="install-prompt">PS&gt;</span> .\tokenuse.exe</pre>
       </div>
     </div>
 
     <div class="install-foot">
-      <span>macOS - Linux - Windows (WSL)</span>
+      <span>TUI: macOS - Linux - Windows</span>
       <span>-</span>
-      <span>MIT licensed</span>
+      <span>Desktop: macOS</span>
       <span>-</span>
-      <span>v0.1.0</span>
+      <span>{latestVersion}</span>
     </div>
   </div>
 </section>

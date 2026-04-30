@@ -2,7 +2,7 @@
 import { render } from "astro:content";
 import desktopApp from "../assets/desktop-app.png";
 import DocsLayout from "../layouts/DocsLayout.astro";
-import { getDocsPageById, overviewCardIds, type DocsEntry, type DocsPageMeta } from "../lib/docs";
+import { type DocsEntry, type DocsPageMeta } from "../lib/docs";
 
 interface Props {
   entry: DocsEntry;
@@ -12,9 +12,7 @@ interface Props {
 const { entry, page } = Astro.props;
 const { Content, headings } = await render(entry);
 const tocHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 3);
-const isOverview = page.id === "overview";
 const isDesktop = page.id === "guides/desktop-usage";
-const overviewCards = overviewCardIds.map((id) => getDocsPageById(id));
 ---
 
 <DocsLayout title={page.title} description={page.description} headings={tocHeadings}>
@@ -23,28 +21,6 @@ const overviewCards = overviewCardIds.map((id) => getDocsPageById(id));
     <h1>{page.title}</h1>
     <p class="docs-lede">{page.description}</p>
   </header>
-
-  {isOverview && (
-    <div class="docs-card-grid docs-card-grid-featured">
-      {overviewCards.map((card, index) => (
-        <a class:list={["docs-card", card.id === "guides/desktop-usage" && "docs-card-image"]} href={card.href}>
-          {card.id === "guides/desktop-usage" && (
-            <img
-              src={desktopApp.src}
-              width={desktopApp.width}
-              height={desktopApp.height}
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-          )}
-          <span>{String(index + 1).padStart(2, "0")}</span>
-          <h2>{card.navLabel}</h2>
-          <p>{card.description}</p>
-        </a>
-      ))}
-    </div>
-  )}
 
   {isDesktop && (
     <figure class="docs-feature-figure">

@@ -134,13 +134,14 @@ kbd {
 
 .brand-word {
   display: inline-flex;
-  min-height: 32px;
+  min-height: 36px;
   align-items: center;
   color: var(--brass);
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 0.95;
+  transform: translateY(1px);
 }
 
 .nav-links {
@@ -480,7 +481,7 @@ kbd {
 .section {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 96px 32px;
+  padding: 72px 32px;
 }
 
 .section-head {
@@ -508,7 +509,15 @@ kbd {
 
 .section-terminal,
 .section-tools {
-  padding-top: 48px;
+  padding-top: 36px;
+}
+
+.section-terminal {
+  padding-bottom: 48px;
+}
+
+.section-tools {
+  padding-bottom: 56px;
 }
 
 .tools-grid,
@@ -520,6 +529,7 @@ kbd {
 
 .tools-grid {
   grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
 }
 
 .tool-card,
@@ -529,6 +539,12 @@ kbd {
   border-radius: 10px;
   background: linear-gradient(180deg, var(--panel-2), var(--panel));
   box-shadow: var(--shadow-1);
+}
+
+.tool-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
 .tool-card-plate {
@@ -556,6 +572,7 @@ kbd {
 }
 
 .tool-card-body {
+  flex: 1;
   padding: 18px 18px 16px;
 }
 
@@ -591,11 +608,14 @@ kbd {
 
 .tool-card-foot {
   display: flex;
+  min-height: 44px;
   padding: 10px 18px;
   border-top: 1px solid var(--line);
+  align-items: center;
   background: rgba(0, 0, 0, 0.3);
   font-size: 11px;
   justify-content: space-between;
+  margin-top: auto;
   text-transform: uppercase;
 }
 
@@ -788,6 +808,7 @@ kbd {
 }
 
 .section-install {
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 
@@ -856,9 +877,9 @@ kbd {
   border-radius: 0 8px 8px 0;
 }
 
-#install-run:checked + label,
-#install-features:checked + label,
-#install-list:checked + label {
+#install-macos:checked + label,
+#install-linux:checked + label,
+#install-windows:checked + label {
   border-color: var(--brass);
   background: var(--brass);
   color: #1a1108;
@@ -877,9 +898,9 @@ kbd {
   text-align: left;
 }
 
-#install-run:checked ~ .install-panels .install-panel-run,
-#install-features:checked ~ .install-panels .install-panel-features,
-#install-list:checked ~ .install-panels .install-panel-list {
+#install-macos:checked ~ .install-panels .install-panel-macos,
+#install-linux:checked ~ .install-panels .install-panel-linux,
+#install-windows:checked ~ .install-panels .install-panel-windows {
   display: block;
 }
 
@@ -1574,8 +1595,8 @@ kbd {
   }
 
   .section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .section-h2,

@@ -1,7 +1,10 @@
 ---
 import Logomark from "./Logomark.astro";
+import { getLatestRelease } from "../lib/releases";
 
 const githubUrl = "https://github.com/russmckendrick/tokenuse";
+const latestRelease = await getLatestRelease();
+const latestVersion = latestRelease?.tag ?? "latest release";
 ---
 
 <footer class="footer">
@@ -38,7 +41,7 @@ const githubUrl = "https://github.com/russmckendrick/tokenuse";
     </div>
     <div class="footer-line">
       <span>2026 tokenuse - all your tokens, all on your machine.</span>
-      <span>v0.1.0</span>
+      <span>{latestVersion}</span>
     </div>
   </div>
 </footer>

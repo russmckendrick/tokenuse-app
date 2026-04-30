@@ -5,8 +5,8 @@ const tools = [
   {
     kind: "claude",
     name: "Claude Code",
-    src: "~/.claude/projects/",
-    lines: ["Exact tokens and cache reads", "Tool calls plus Bash invocations", "MCP tool usage"]
+    src: "~/.claude/projects/ + Claude Desktop",
+    lines: ["Exact tokens and cache reads", "Bash commands and tool calls", "MCP server and tool usage"]
   },
   {
     kind: "codex",
@@ -23,7 +23,7 @@ const tools = [
   {
     kind: "copilot",
     name: "GitHub Copilot",
-    src: "~/.copilot/session-state/",
+    src: "~/.copilot/session-state/ + VS Code Chat",
     lines: ["Legacy output tokens", "VS Code Chat transcripts", "Estimated transcript usage"]
   }
 ] as const;
@@ -32,10 +32,10 @@ const tools = [
 <section id="tools" class="section section-tools">
   <div class="section-head">
     <div class="section-eyebrow">SUPPORTED TOOLS</div>
-    <h2 class="section-h2">Four operators, one switchboard.</h2>
+    <h2 class="section-h2">Four local parsers, one archive.</h2>
     <p class="section-lede">
-      Token Use reads the session files your tools already write to disk. No proxying, no extension,
-      no rewiring your editor. Plug it in and the calls just show up.
+      Token Use reads the session files your tools already write to disk. It does not proxy prompts or require
+      editor extensions; it normalizes existing local history into one browsable usage archive.
     </p>
   </div>
 
