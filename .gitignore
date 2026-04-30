@@ -39,5 +39,5 @@ TokenUse Landing.html
 landing.css
 landing.jsx
 tweaks-panel.jsx
-assets/
-uploads/
+/assets/
+/uploads/

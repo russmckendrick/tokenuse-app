@@ -1,0 +1,1808 @@
+<svg width="1800" height="1608" viewBox="0 0 1800 1608" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1800" height="1608" opacity="1" fill="#202438" stroke="none"/>
+<text x="24" y="24" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#6E7492">
+Today
+</text>
+<text x="98" y="24" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#6E7492">
+7 Days
+</text>
+<text x="182" y="24" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#6E7492">
+30 Days
+</text>
+<text x="276" y="24" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#6E7492">
+This Month
+</text>
+<text x="400" y="24" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#FF8F40" font-weight="bold">
+[ All Time ]
+</text>
+<text x="1596" y="24" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+[t] All    [p] All
+</text>
+<rect x="24" y="68" width="1751" height="129" opacity="1" fill="none" stroke="#FF8F40"/>
+<text x="40" y="80" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#FF8F40" font-weight="bold">
+tokenuse  ·  All Time  ·  All tools
+</text>
+<text x="40" y="104" dy="0.76em" text-anchor="start" font-family="monospace" font-size="24.193548387096776" opacity="1" fill="#FFD60A" font-weight="bold">
+£1334
+</text>
+<text x="121" y="112" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+cost
+</text>
+<text x="189" y="104" dy="0.76em" text-anchor="start" font-family="monospace" font-size="24.193548387096776" opacity="1" fill="#CBD4F2" font-weight="bold">
+12,014
+</text>
+<text x="285" y="112" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+calls
+</text>
+<text x="363" y="104" dy="0.76em" text-anchor="start" font-family="monospace" font-size="24.193548387096776" opacity="1" fill="#CBD4F2" font-weight="bold">
+149
+</text>
+<text x="414" y="112" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+sessions
+</text>
+<text x="522" y="104" dy="0.76em" text-anchor="start" font-family="monospace" font-size="24.193548387096776" opacity="1" fill="#CBD4F2" font-weight="bold">
+95.5%
+</text>
+<text x="603" y="112" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+cache hit
+</text>
+<text x="40" y="140" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+55.4M in   8.2M out   1.4B cached   11.8M written
+</text>
+<rect x="24" y="210" width="869" height="245" opacity="1" fill="none" stroke="#62A6FF"/>
+<rect x="38" y="209" width="182" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="42" y="201" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#62A6FF" font-weight="bold">
+ Daily Activity 
+</text>
+<text x="40" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+date
+</text>
+<text x="758" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+cost
+</text>
+<text x="828" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+calls
+</text>
+<text x="40" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+03-22
+</text>
+<rect x="104" y="254" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="124" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="254" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="748" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£5.85
+</text>
+<text x="848" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+132
+</text>
+<text x="40" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+03-29
+</text>
+<rect x="104" y="278" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="124" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="278" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="738" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£23.37
+</text>
+<text x="848" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+635
+</text>
+<text x="40" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+03-30
+</text>
+<rect x="104" y="302" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="124" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="302" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="748" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£3.13
+</text>
+<text x="848" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+137
+</text>
+<text x="40" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+03-31
+</text>
+<rect x="104" y="326" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="124" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="326" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="738" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£28.27
+</text>
+<text x="848" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+475
+</text>
+<text x="40" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+04-01
+</text>
+<rect x="104" y="350" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="124" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="350" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="748" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£1.80
+</text>
+<text x="868" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+5
+</text>
+<text x="40" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+04-02
+</text>
+<rect x="104" y="374" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="124" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="374" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="738" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.517
+</text>
+<text x="858" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+24
+</text>
+<text x="40" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+04-03
+</text>
+<rect x="104" y="398" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="124" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="398" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="738" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£17.81
+</text>
+<text x="848" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+336
+</text>
+<text x="40" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+04-04
+</text>
+<rect x="104" y="422" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="114" y="422" width="9" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="124" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="134" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="144" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="154" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="164" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="174" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="184" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="194" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="204" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="214" y="422" width="9" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="738" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£33.59
+</text>
+<text x="848" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+342
+</text>
+<rect x="906" y="210" width="869" height="245" opacity="1" fill="none" stroke="#4CF2A0"/>
+<rect x="920" y="209" width="138" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="924" y="201" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#4CF2A0" font-weight="bold">
+ By Project 
+</text>
+<text x="1040" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+project
+</text>
+<text x="1370" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+cost
+</text>
+<text x="1440" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+avg/s
+</text>
+<text x="1500" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+sess
+</text>
+<text x="1546" y="224" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+tools
+</text>
+<rect x="922" y="254" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="254" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="254" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="949" y="254" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="958" y="254" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="967" y="254" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="976" y="254" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="985" y="254" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="994" y="254" width="8" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="1003" y="254" width="8" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="1012" y="254" width="8" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="1021" y="254" width="8" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="1040" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+alpha-app
+</text>
+<text x="1340" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£360.06
+</text>
+<text x="1430" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£21.18
+</text>
+<text x="1520" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+17
+</text>
+<text x="1546" y="252" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Claude £254.7  Codex £105.3
+</text>
+<rect x="922" y="278" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="278" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="278" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="949" y="278" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="958" y="278" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="967" y="278" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="976" y="278" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="985" y="278" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="994" y="278" width="8" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="1003" y="278" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1012" y="278" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1021" y="278" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1040" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+launch-agent
+</text>
+<text x="1340" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£262.33
+</text>
+<text x="1430" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£29.15
+</text>
+<text x="1530" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+9
+</text>
+<text x="1546" y="276" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Claude £258.5  Codex £3.87
+</text>
+<rect x="922" y="302" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="302" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="302" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="949" y="302" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="958" y="302" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="967" y="302" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="976" y="302" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="985" y="302" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="302" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1003" y="302" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1012" y="302" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1021" y="302" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1040" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+docs
+</text>
+<text x="1340" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£143.62
+</text>
+<text x="1440" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£4.10
+</text>
+<text x="1520" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+35
+</text>
+<text x="1546" y="300" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Claude £137.3  Codex £6.27 …
+</text>
+<rect x="922" y="326" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="326" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="326" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="949" y="326" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="958" y="326" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="967" y="326" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="976" y="326" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="985" y="326" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="326" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1003" y="326" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1012" y="326" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1021" y="326" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1040" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+review-bot
+</text>
+<text x="1340" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£136.15
+</text>
+<text x="1440" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£3.68
+</text>
+<text x="1520" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+37
+</text>
+<text x="1546" y="324" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Claude £84.5  Codex £51.7  …
+</text>
+<rect x="922" y="350" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="350" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="350" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="949" y="350" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="958" y="350" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="967" y="350" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="976" y="350" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="985" y="350" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="350" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1003" y="350" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1012" y="350" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1021" y="350" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1040" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+media-exporter
+</text>
+<text x="1340" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£130.52
+</text>
+<text x="1430" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£65.26
+</text>
+<text x="1530" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2
+</text>
+<text x="1546" y="348" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Claude £130.5
+</text>
+<rect x="922" y="374" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="374" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="374" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="949" y="374" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="958" y="374" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="967" y="374" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="976" y="374" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="985" y="374" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="374" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1003" y="374" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1012" y="374" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1021" y="374" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1040" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+billing
+</text>
+<text x="1340" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£130.37
+</text>
+<text x="1440" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£8.15
+</text>
+<text x="1520" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+16
+</text>
+<text x="1546" y="372" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Claude £109.0  Codex £21.3 …
+</text>
+<rect x="922" y="398" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="398" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="398" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="949" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="958" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="967" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="976" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="985" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1003" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1012" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1021" y="398" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1040" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+api
+</text>
+<text x="1350" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£68.36
+</text>
+<text x="1440" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£2.73
+</text>
+<text x="1520" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+25
+</text>
+<text x="1546" y="396" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Codex £68.4
+</text>
+<rect x="922" y="422" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="931" y="422" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="940" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="949" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="958" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="967" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="976" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="985" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1003" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1012" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1021" y="422" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1040" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+demo-workspace
+</text>
+<text x="1350" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£53.82
+</text>
+<text x="1430" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£26.91
+</text>
+<text x="1530" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2
+</text>
+<text x="1546" y="420" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#7EBCFF">
+Claude £53.8
+</text>
+<rect x="24" y="468" width="1751" height="293" opacity="1" fill="none" stroke="#FF5F6D"/>
+<rect x="38" y="467" width="160" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="42" y="459" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#FF5F6D" font-weight="bold">
+ Top Sessions 
+</text>
+<text x="158" y="482" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+date
+</text>
+<text x="268" y="482" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+project
+</text>
+<text x="1640" y="482" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+cost
+</text>
+<text x="1710" y="482" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+calls
+</text>
+<rect x="40" y="512" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="512" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="512" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="512" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="76" y="512" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="85" y="512" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="94" y="512" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="103" y="512" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="112" y="512" width="8" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="121" y="512" width="8" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="130" y="512" width="8" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="139" y="512" width="8" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="158" y="510" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-18
+</text>
+<text x="268" y="510" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+alpha-app
+</text>
+<text x="1610" y="510" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£183.62
+</text>
+<text x="1730" y="510" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+545
+</text>
+<rect x="40" y="536" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="536" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="536" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="536" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="76" y="536" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="85" y="536" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="94" y="536" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="103" y="536" width="8" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="112" y="536" width="8" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="121" y="536" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="536" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="536" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="534" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-26
+</text>
+<text x="268" y="534" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+media-exporter
+</text>
+<text x="1610" y="534" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£130.08
+</text>
+<text x="1730" y="534" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+311
+</text>
+<rect x="40" y="560" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="560" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="560" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="560" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="76" y="560" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="85" y="560" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="560" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="560" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="560" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="560" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="560" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="560" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="558" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-18
+</text>
+<text x="268" y="558" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+launch-agent
+</text>
+<text x="1620" y="558" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£69.52
+</text>
+<text x="1730" y="558" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+175
+</text>
+<rect x="40" y="584" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="584" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="584" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="584" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="76" y="584" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="85" y="584" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="584" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="584" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="584" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="584" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="584" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="584" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="582" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-18
+</text>
+<text x="268" y="582" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+alpha-app
+</text>
+<text x="1620" y="582" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£69.35
+</text>
+<text x="1730" y="582" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+234
+</text>
+<rect x="40" y="608" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="608" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="608" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="608" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="76" y="608" width="8" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="85" y="608" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="608" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="608" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="608" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="608" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="608" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="608" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="606" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-19
+</text>
+<text x="268" y="606" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+launch-agent
+</text>
+<text x="1620" y="606" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£62.10
+</text>
+<text x="1730" y="606" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+230
+</text>
+<rect x="40" y="632" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="632" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="632" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="632" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="76" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="85" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="632" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="630" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-29
+</text>
+<text x="268" y="630" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+billing
+</text>
+<text x="1620" y="630" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£57.74
+</text>
+<text x="1730" y="630" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+151
+</text>
+<rect x="40" y="656" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="656" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="656" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="656" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="76" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="85" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="656" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="654" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-12
+</text>
+<text x="268" y="654" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+review-bot
+</text>
+<text x="1620" y="654" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£51.18
+</text>
+<text x="1730" y="654" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+248
+</text>
+<rect x="40" y="680" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="680" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="680" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="76" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="85" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="680" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="678" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-16
+</text>
+<text x="268" y="678" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+launch-agent
+</text>
+<text x="1620" y="678" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£44.21
+</text>
+<text x="1730" y="678" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+202
+</text>
+<rect x="40" y="704" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="704" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="704" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="76" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="85" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="704" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="702" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-19
+</text>
+<text x="268" y="702" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+demo-workspace
+</text>
+<text x="1620" y="702" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£33.67
+</text>
+<text x="1730" y="702" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+154
+</text>
+<rect x="40" y="728" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="49" y="728" width="8" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="58" y="728" width="8" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="67" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="76" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="85" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="94" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="103" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="121" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="130" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="139" y="728" width="8" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="158" y="726" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+2026-04-19
+</text>
+<text x="268" y="726" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+launch-agent
+</text>
+<text x="1620" y="726" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£33.30
+</text>
+<text x="1730" y="726" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+167
+</text>
+<rect x="24" y="774" width="869" height="341" opacity="1" fill="none" stroke="#FFD60A"/>
+<rect x="38" y="773" width="259" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="42" y="765" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#FFD60A" font-weight="bold">
+ Project Spend by Tool 
+</text>
+<text x="148" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+project
+</text>
+<text x="538" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+tool
+</text>
+<text x="648" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+cost
+</text>
+<text x="698" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+calls
+</text>
+<text x="758" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+sess
+</text>
+<text x="828" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+avg/s
+</text>
+<rect x="40" y="818" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="818" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="818" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="818" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="818" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="818" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="818" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="96" y="818" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="104" y="818" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="112" y="818" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="120" y="818" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="128" y="818" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="148" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+alpha-app
+</text>
+<text x="538" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Claude
+</text>
+<text x="618" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£254.72
+</text>
+<text x="718" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+796
+</text>
+<text x="788" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+4
+</text>
+<text x="818" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£63.68
+</text>
+<rect x="40" y="842" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="842" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="842" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="842" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="842" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+alpha-app
+</text>
+<text x="538" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Codex
+</text>
+<text x="618" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£105.33
+</text>
+<text x="708" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2245
+</text>
+<text x="778" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+13
+</text>
+<text x="828" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£8.10
+</text>
+<rect x="40" y="866" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="866" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="866" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="866" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="866" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="866" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="866" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="96" y="866" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="104" y="866" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="112" y="866" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="120" y="866" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="128" y="866" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="148" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+launch-agent
+</text>
+<text x="538" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Claude
+</text>
+<text x="618" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£258.47
+</text>
+<text x="708" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1114
+</text>
+<text x="788" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+7
+</text>
+<text x="818" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£36.92
+</text>
+<rect x="40" y="890" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+launch-agent
+</text>
+<text x="538" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Codex
+</text>
+<text x="638" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£3.87
+</text>
+<text x="728" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+94
+</text>
+<text x="788" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2
+</text>
+<text x="828" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£1.93
+</text>
+<rect x="40" y="914" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="914" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="914" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="914" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="914" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="914" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="914" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="96" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+docs
+</text>
+<text x="538" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Claude
+</text>
+<text x="618" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£137.33
+</text>
+<text x="708" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1323
+</text>
+<text x="778" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+30
+</text>
+<text x="828" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£4.58
+</text>
+<rect x="40" y="938" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+docs
+</text>
+<text x="538" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Codex
+</text>
+<text x="638" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£6.27
+</text>
+<text x="718" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+150
+</text>
+<text x="788" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+3
+</text>
+<text x="828" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£2.09
+</text>
+<rect x="40" y="962" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+docs
+</text>
+<text x="538" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Cursor
+</text>
+<text x="628" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.025
+</text>
+<text x="738" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+7
+</text>
+<text x="788" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2
+</text>
+<text x="818" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.013
+</text>
+<rect x="40" y="986" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="986" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="986" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="986" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+review-bot
+</text>
+<text x="538" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Claude
+</text>
+<text x="628" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£84.48
+</text>
+<text x="718" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+547
+</text>
+<text x="778" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+10
+</text>
+<text x="828" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£8.45
+</text>
+<rect x="40" y="1010" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1010" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1010" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+review-bot
+</text>
+<text x="538" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Codex
+</text>
+<text x="628" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£51.67
+</text>
+<text x="708" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1547
+</text>
+<text x="778" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+26
+</text>
+<text x="828" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£1.99
+</text>
+<rect x="40" y="1034" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1034" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1032" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+review-bot
+</text>
+<text x="538" y="1032" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Copilot
+</text>
+<text x="618" y="1032" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.0046
+</text>
+<text x="738" y="1032" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1
+</text>
+<text x="788" y="1032" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1
+</text>
+<text x="808" y="1032" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.0046
+</text>
+<rect x="40" y="1058" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1058" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1058" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="1058" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="1058" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="1058" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="1058" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1058" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1058" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1058" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1058" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1058" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1056" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+media-exporter
+</text>
+<text x="538" y="1056" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Claude
+</text>
+<text x="618" y="1056" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£130.52
+</text>
+<text x="718" y="1056" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+315
+</text>
+<text x="788" y="1056" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2
+</text>
+<text x="818" y="1056" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£65.26
+</text>
+<rect x="40" y="1082" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1082" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1082" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="1082" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="1082" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="1082" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="1082" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1082" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1082" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1082" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1082" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1082" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1080" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#A1A7C3">
+billing
+</text>
+<text x="538" y="1080" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#F5CF6C">
+Claude
+</text>
+<text x="618" y="1080" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£109.02
+</text>
+<text x="718" y="1080" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+435
+</text>
+<text x="788" y="1080" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+7
+</text>
+<text x="818" y="1080" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£15.57
+</text>
+<rect x="906" y="774" width="869" height="341" opacity="1" fill="none" stroke="#F05AF2"/>
+<rect x="920" y="773" width="116" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="924" y="765" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#F05AF2" font-weight="bold">
+ By Model 
+</text>
+<text x="1030" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+model
+</text>
+<text x="1560" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+cost
+</text>
+<text x="1640" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+cache
+</text>
+<text x="1710" y="788" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+calls
+</text>
+<rect x="922" y="818" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="818" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="818" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="946" y="818" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="954" y="818" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="962" y="818" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="970" y="818" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="978" y="818" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="986" y="818" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="994" y="818" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="1002" y="818" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="1010" y="818" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="1030" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Opus 4.7
+</text>
+<text x="1530" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£786.08
+</text>
+<text x="1640" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+98.4%
+</text>
+<text x="1720" y="816" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2779
+</text>
+<rect x="922" y="842" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="842" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="842" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="946" y="842" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="954" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="842" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Opus 4.6
+</text>
+<text x="1530" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£263.22
+</text>
+<text x="1640" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+97.9%
+</text>
+<text x="1720" y="840" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2136
+</text>
+<rect x="922" y="866" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="866" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="866" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="946" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="866" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+GPT-5.4
+</text>
+<text x="1530" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£165.07
+</text>
+<text x="1640" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+93.3%
+</text>
+<text x="1720" y="864" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+4311
+</text>
+<rect x="922" y="890" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="890" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="890" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+GPT-5
+</text>
+<text x="1530" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£119.67
+</text>
+<text x="1640" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+92.9%
+</text>
+<text x="1720" y="888" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2757
+</text>
+<rect x="922" y="914" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="914" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+openai-auto
+</text>
+<text x="1540" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.043
+</text>
+<text x="1650" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+0.0%
+</text>
+<text x="1750" y="912" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+9
+</text>
+<rect x="922" y="938" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="938" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+cursor-auto
+</text>
+<text x="1540" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.024
+</text>
+<text x="1650" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+0.0%
+</text>
+<text x="1750" y="936" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+6
+</text>
+<rect x="922" y="962" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="962" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+copilot-auto
+</text>
+<text x="1530" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.0046
+</text>
+<text x="1650" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+0.0%
+</text>
+<text x="1750" y="960" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1
+</text>
+<rect x="922" y="986" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="986" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+gpt-5.3-codex-low
+</text>
+<text x="1530" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.0014
+</text>
+<text x="1650" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+0.0%
+</text>
+<text x="1750" y="984" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1
+</text>
+<rect x="922" y="1010" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1010" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+&lt;synthetic&gt;
+</text>
+<text x="1530" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#FFD60A">
+£0.0000
+</text>
+<text x="1680" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+-
+</text>
+<text x="1740" y="1008" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+14
+</text>
+<rect x="24" y="1128" width="869" height="293" opacity="1" fill="none" stroke="#4DF3E8"/>
+<rect x="38" y="1127" width="138" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="42" y="1119" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#4DF3E8" font-weight="bold">
+ Core Tools 
+</text>
+<text x="148" y="1142" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+name
+</text>
+<text x="828" y="1142" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+calls
+</text>
+<rect x="40" y="1172" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1172" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1172" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="1172" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="1172" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="1172" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="1172" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="96" y="1172" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="104" y="1172" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="112" y="1172" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="120" y="1172" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="128" y="1172" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="148" y="1170" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Bash
+</text>
+<text x="838" y="1170" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+6787
+</text>
+<rect x="40" y="1196" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1196" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1196" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="1196" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1194" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Edit
+</text>
+<text x="838" y="1194" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+2043
+</text>
+<rect x="40" y="1220" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1220" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1218" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+write_stdin
+</text>
+<text x="848" y="1218" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+611
+</text>
+<rect x="40" y="1244" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1242" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Read
+</text>
+<text x="848" y="1242" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+373
+</text>
+<rect x="40" y="1268" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1266" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+js
+</text>
+<text x="848" y="1266" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+184
+</text>
+<rect x="40" y="1292" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1290" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+update_plan
+</text>
+<text x="848" y="1290" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+129
+</text>
+<rect x="40" y="1316" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1314" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Write
+</text>
+<text x="848" y="1314" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+120
+</text>
+<rect x="40" y="1340" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1338" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+TaskUpdate
+</text>
+<text x="858" y="1338" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+92
+</text>
+<rect x="40" y="1364" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1362" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Grep
+</text>
+<text x="858" y="1362" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+70
+</text>
+<rect x="40" y="1388" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1386" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+request_user_input
+</text>
+<text x="858" y="1386" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+61
+</text>
+<rect x="906" y="1128" width="869" height="293" opacity="1" fill="none" stroke="#FF8F40"/>
+<rect x="920" y="1127" width="182" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="924" y="1119" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#FF8F40" font-weight="bold">
+ Shell Commands 
+</text>
+<text x="1030" y="1142" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+name
+</text>
+<text x="1710" y="1142" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+calls
+</text>
+<rect x="922" y="1172" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1172" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="1172" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="946" y="1172" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="954" y="1172" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="962" y="1172" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="970" y="1172" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="978" y="1172" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="986" y="1172" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="994" y="1172" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="1002" y="1172" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="1010" y="1172" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="1030" y="1170" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+sed
+</text>
+<text x="1720" y="1170" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+3357
+</text>
+<rect x="922" y="1196" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1196" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="1196" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="946" y="1196" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="954" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1196" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1194" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+cargo
+</text>
+<text x="1730" y="1194" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+906
+</text>
+<rect x="922" y="1220" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1220" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="1220" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="946" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1220" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1218" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+rg
+</text>
+<text x="1730" y="1218" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+872
+</text>
+<rect x="922" y="1244" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1244" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="1244" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="946" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1244" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1242" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+git
+</text>
+<text x="1730" y="1242" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+691
+</text>
+<rect x="922" y="1268" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1268" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1268" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1266" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+pnpm
+</text>
+<text x="1730" y="1266" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+388
+</text>
+<rect x="922" y="1292" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1292" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="938" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1292" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1290" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+nl
+</text>
+<text x="1730" y="1290" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+358
+</text>
+<rect x="922" y="1316" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1316" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1314" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+import
+</text>
+<text x="1730" y="1314" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+216
+</text>
+<rect x="922" y="1340" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1340" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1338" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+tail
+</text>
+<text x="1730" y="1338" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+174
+</text>
+<rect x="922" y="1364" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1364" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1362" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+head
+</text>
+<text x="1730" y="1362" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+168
+</text>
+<rect x="922" y="1388" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="930" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="938" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="946" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="954" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="962" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="970" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="978" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="986" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="994" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1002" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="1010" y="1388" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="1030" y="1386" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+ls
+</text>
+<text x="1730" y="1386" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+155
+</text>
+<rect x="24" y="1434" width="1751" height="149" opacity="1" fill="none" stroke="#F05AF2"/>
+<rect x="38" y="1433" width="149" height="2" opacity="1" fill="#202438" stroke="none"/>
+<text x="42" y="1425" dy="0.76em" text-anchor="start" font-family="monospace" font-size="17.741935483870968" opacity="1" fill="#F05AF2" font-weight="bold">
+ MCP Servers 
+</text>
+<text x="148" y="1448" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+name
+</text>
+<text x="1710" y="1448" dy="0.76em" text-anchor="start" font-family="monospace" font-size="11.290322580645162" opacity="1" fill="#6E7492">
+calls
+</text>
+<rect x="40" y="1478" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1478" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1478" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="1478" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="1478" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="1478" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="1478" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="96" y="1478" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="104" y="1478" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="112" y="1478" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="120" y="1478" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<rect x="128" y="1478" width="7" height="17" opacity="1" fill="#FF5F6D" stroke="none"/>
+<text x="148" y="1476" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+claude-in-chrome
+</text>
+<text x="1730" y="1476" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+215
+</text>
+<rect x="40" y="1502" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1502" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="56" y="1502" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="64" y="1502" width="7" height="17" opacity="1" fill="#7EBCFF" stroke="none"/>
+<rect x="72" y="1502" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="80" y="1502" width="7" height="17" opacity="1" fill="#F5CF6C" stroke="none"/>
+<rect x="88" y="1502" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="96" y="1502" width="7" height="17" opacity="1" fill="#FFD60A" stroke="none"/>
+<rect x="104" y="1502" width="7" height="17" opacity="1" fill="#FF9C48" stroke="none"/>
+<rect x="112" y="1502" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1502" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1502" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1500" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+Claude_Preview
+</text>
+<text x="1730" y="1500" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+149
+</text>
+<rect x="40" y="1526" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1526" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1524" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+cowork
+</text>
+<text x="1750" y="1524" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1
+</text>
+<rect x="40" y="1550" width="7" height="17" opacity="1" fill="#62A6FF" stroke="none"/>
+<rect x="48" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="56" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="64" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="72" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="80" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="88" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="96" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="104" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="112" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="120" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<rect x="128" y="1550" width="7" height="17" opacity="1" fill="#292D42" stroke="none"/>
+<text x="148" y="1548" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+ccd_session
+</text>
+<text x="1750" y="1548" dy="0.76em" text-anchor="start" font-family="monospace" font-size="13.709677419354838" opacity="1" fill="#CBD4F2">
+1
+</text>
+</svg>
