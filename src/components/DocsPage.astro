@@ -3,6 +3,7 @@ import { render } from "astro:content";
 import desktopApp from "../assets/desktop-app.png";
 import DocsLayout from "../layouts/DocsLayout.astro";
 import { type DocsEntry, type DocsPageMeta } from "../lib/docs";
+import { SITE_NAME, absoluteSiteUrl } from "../lib/seo";
 
 interface Props {
   entry: DocsEntry;
@@ -13,9 +14,28 @@ const { entry, page } = Astro.props;
 const { Content, headings } = await render(entry);
 const tocHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 3);
 const isDesktop = page.id === "guides/desktop-usage";
+const pageUrl = absoluteSiteUrl(page.href);
+const docsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  headline: `${page.title} - Token Use Docs`,
+  description: page.description,
+  url: pageUrl,
+  mainEntityOfPage: pageUrl,
+  isPartOf: {
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: absoluteSiteUrl("/"),
+  },
+  publisher: {
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: absoluteSiteUrl("/"),
+  },
+};
 ---
 
-<DocsLayout title={page.title} description={page.description} headings={tocHeadings}>
+<DocsLayout title={page.title} description={page.description} headings={tocHeadings} ogType="article" jsonLd={docsJsonLd}>
   <header class="docs-page-head">
     <p class="docs-eyebrow">{page.eyebrow}</p>
     <h1>{page.title}</h1>

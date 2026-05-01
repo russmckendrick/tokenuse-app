@@ -1,22 +1,25 @@
 ---
+import { absoluteSiteUrl } from "../lib/seo";
+
 interface Props {
   title: string;
   to: string;
 }
 
 const { title, to } = Astro.props;
+const destinationUrl = absoluteSiteUrl(to);
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="robots" content="noindex" />
-    <meta http-equiv="refresh" content={`0; url=${to}`} />
-    <link rel="canonical" href={to} />
+    <meta name="robots" content="noindex,follow" />
+    <meta http-equiv="refresh" content={`0; url=${destinationUrl}`} />
+    <link rel="canonical" href={destinationUrl} />
     <title>{title}</title>
   </head>
   <body>
-    <p><a href={to}>Continue to {to}</a></p>
+    <p><a href={destinationUrl}>Continue to {to}</a></p>
   </body>
 </html>

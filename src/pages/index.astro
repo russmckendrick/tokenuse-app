@@ -7,14 +7,44 @@ import DashboardSection from "../components/landing/DashboardSection.astro";
 import ToolsSection from "../components/landing/ToolsSection.astro";
 import InstallSection from "../components/landing/InstallSection.astro";
 import { getLatestRelease } from "../lib/releases";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, SITE_NAME, absoluteSiteUrl } from "../lib/seo";
 
 const latestRelease = await getLatestRelease();
 const latestVersion = latestRelease?.tag ?? "latest release";
 const latestReleaseHref = latestRelease ? `/releases/${latestRelease.tag}/` : "/releases/";
+const homeJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: absoluteSiteUrl("/"),
+      description: DEFAULT_DESCRIPTION,
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: SITE_NAME,
+      applicationCategory: "DeveloperApplication",
+      operatingSystem: "macOS, Linux, Windows",
+      description: DEFAULT_DESCRIPTION,
+      url: absoluteSiteUrl("/"),
+      downloadUrl: absoluteSiteUrl("/docs/guides/installation/"),
+      softwareVersion: latestRelease?.tag,
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      sameAs: ["https://github.com/russmckendrick/tokenuse"],
+    },
+  ],
+};
 ---
 
 <BaseLayout
-  description="Token Use is a local-first TUI and macOS desktop app for exploring AI coding tool token and cost usage across Claude Code, Codex, Cursor, and GitHub Copilot."
+  title={DEFAULT_TITLE}
+  description={DEFAULT_DESCRIPTION}
+  jsonLd={homeJsonLd}
 >
   <SiteNav />
   <main>

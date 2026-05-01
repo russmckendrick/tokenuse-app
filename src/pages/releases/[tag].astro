@@ -3,6 +3,7 @@ import DocsLayout from "../../layouts/DocsLayout.astro";
 import ReleaseArticle from "../../components/ReleaseArticle.astro";
 import ReleasePager from "../../components/ReleasePager.astro";
 import { getReleases, type Release } from "../../lib/releases";
+import { SITE_NAME, absoluteSiteUrl } from "../../lib/seo";
 
 export async function getStaticPaths() {
   const releases = await getReleases();
@@ -27,9 +28,31 @@ interface Props {
 }
 
 const { release, isLatestStable, older, newer } = Astro.props;
+const releaseUrl = absoluteSiteUrl(`/releases/${release.tag}/`);
+const releaseTitle = `${release.tag} Release - Token Use Release Notes`;
+const releaseJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: releaseTitle,
+  description: release.name,
+  url: releaseUrl,
+  mainEntityOfPage: releaseUrl,
+  datePublished: release.publishedAt || undefined,
+  dateModified: release.publishedAt || undefined,
+  isPartOf: {
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: absoluteSiteUrl("/"),
+  },
+  publisher: {
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: absoluteSiteUrl("/"),
+  },
+};
 ---
 
-<DocsLayout title={`${release.tag} release`} description={release.name}>
+<DocsLayout title={`${release.tag} Release`} seoTitle={releaseTitle} description={release.name} ogType="article" jsonLd={releaseJsonLd}>
   <a class="release-breadcrumb" href="/releases/">All releases</a>
   <ReleaseArticle release={release} isLatestStable={isLatestStable} />
   <ReleasePager newer={newer} older={older} />

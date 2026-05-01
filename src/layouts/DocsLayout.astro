@@ -5,18 +5,23 @@ import SiteFooter from "../components/SiteFooter.astro";
 import sourceInfo from "../../.generated/tokenuse-docs/source.json";
 import { docsNavGroups } from "../lib/docs";
 import { getReleases } from "../lib/releases";
+import type { JsonLd } from "../lib/seo";
 
 interface Props {
   title: string;
+  seoTitle?: string;
   description?: string;
   headings?: Array<{
     depth: number;
     slug: string;
     text: string;
   }>;
+  ogType?: "website" | "article";
+  jsonLd?: JsonLd;
 }
 
-const { title, description, headings = [] } = Astro.props;
+const { title, seoTitle, description, headings = [], ogType = "website", jsonLd } = Astro.props;
+const fullTitle = seoTitle ?? `${title} - Token Use Docs`;
 const path = Astro.url.pathname;
 const sourceCommit = `${sourceInfo.shortCommit ?? "local"}${sourceInfo.dirty ? " + local changes" : ""}`;
 const sourceHref = sourceInfo.commit
@@ -55,7 +60,7 @@ function isActive(href: string): boolean {
 }
 ---
 
-<BaseLayout title={`${title} - token use docs`} description={description} bodyClass="docs-body">
+<BaseLayout title={fullTitle} description={description} bodyClass="docs-body" ogType={ogType} jsonLd={jsonLd}>
   <SiteNav />
   <main class:list={["docs-shell", hasHeadings && "docs-shell-has-toc"]}>
     <aside class="docs-sidebar" aria-label="Documentation navigation">

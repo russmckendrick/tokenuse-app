@@ -1,18 +1,44 @@
 ---
 import "../styles/global.css";
 import { LOGOMARK_COLORS } from "../lib/logomark.mjs";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_ALT,
+  DEFAULT_TITLE,
+  SITE_NAME,
+  absoluteSiteUrl,
+  safeJsonLd,
+  type JsonLd,
+} from "../lib/seo";
 
 interface Props {
   title?: string;
   description?: string;
   bodyClass?: string;
+  canonicalUrl?: string;
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogType?: "website" | "article";
+  twitterCard?: "summary" | "summary_large_image";
+  jsonLd?: JsonLd;
 }
 
 const {
-  title = "token use - local-first token and cost usage explorer",
-  description = "Token Use is a local-first TUI and macOS desktop app for exploring AI coding tool token and cost usage across Claude Code, Codex, Cursor, and GitHub Copilot.",
-  bodyClass = ""
+  title = DEFAULT_TITLE,
+  description = DEFAULT_DESCRIPTION,
+  bodyClass = "",
+  canonicalUrl = Astro.url.pathname,
+  ogImage = DEFAULT_OG_IMAGE,
+  ogImageAlt = DEFAULT_OG_IMAGE_ALT,
+  ogType = "website",
+  twitterCard = "summary_large_image",
+  jsonLd,
 } = Astro.props;
+
+const canonicalHref = absoluteSiteUrl(canonicalUrl);
+const ogImageHref = absoluteSiteUrl(ogImage);
+const serializedJsonLd = jsonLd ? safeJsonLd(jsonLd) : "";
 ---
 
 <!doctype html>
@@ -25,7 +51,23 @@ const {
     <meta name="theme-color" content={LOGOMARK_COLORS.background} />
     <meta name="msapplication-TileColor" content={LOGOMARK_COLORS.background} />
     <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="canonical" href={canonicalHref} />
+    <link rel="sitemap" href="/sitemap.xml" />
     <title>{title}</title>
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalHref} />
+    <meta property="og:image" content={ogImageHref} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content={twitterCard} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageHref} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -40,6 +82,7 @@ const {
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    {serializedJsonLd && <script type="application/ld+json" is:inline set:html={serializedJsonLd} />}
   </head>
   <body class={bodyClass} data-palette="broadcast" data-grain="true">
     <slot />
