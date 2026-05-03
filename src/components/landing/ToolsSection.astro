@@ -25,6 +25,12 @@ const tools = [
     name: "GitHub Copilot",
     src: "~/.copilot/session-state/ + VS Code Chat",
     lines: ["Legacy output tokens", "VS Code Chat transcripts", "Estimated transcript usage"]
+  },
+  {
+    kind: "gemini",
+    name: "Gemini",
+    src: "~/.gemini/tmp/<project_hash>/chats/",
+    lines: ["Exact usage and cache reads", "Thought token tracking", "Tool calls"]
   }
 ] as const;
 ---
@@ -32,7 +38,7 @@ const tools = [
 <section id="tools" class="section section-tools">
   <div class="section-head">
     <div class="section-eyebrow">SUPPORTED TOOLS</div>
-    <h2 class="section-h2">Four local parsers, one archive.</h2>
+    <h2 class="section-h2">Five local parsers, one archive.</h2>
     <p class="section-lede">
       Token Use reads the session files your tools already write to disk. It does not proxy prompts or require
       editor extensions; it normalizes existing local history into one browsable usage archive.
