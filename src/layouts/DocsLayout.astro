@@ -5,6 +5,8 @@ import SiteFooter from "../components/SiteFooter.astro";
 import sourceInfo from "../../.generated/tokenuse-docs/source.json";
 import { getDocsNavGroups } from "../lib/docs";
 import { getReleases } from "../lib/releases";
+import { docsNavIcons } from "../config/nav";
+import NavIcon from "../components/NavIcon.astro";
 import type { JsonLd } from "../lib/seo";
 
 interface Props {
@@ -69,9 +71,15 @@ function isActive(href: string): boolean {
         {navGroups.map((group) => (
           <div class="docs-nav-group">
             <p>{group.label}</p>
-            {group.items.map((item) => (
-              <a class:list={["docs-side-link", item.level === 1 && "nested", isActive(item.href) && "active"]} href={item.href}>{item.navLabel}</a>
-            ))}
+            {group.items.map((item) => {
+              const sideIcon = docsNavIcons[item.id];
+              return (
+                <a class:list={["docs-side-link", item.level === 1 && "nested", isActive(item.href) && "active", sideIcon && "has-icon"]} href={item.href}>
+                  {sideIcon && <NavIcon icon={sideIcon} size={13} />}
+                  {item.navLabel}
+                </a>
+              );
+            })}
           </div>
         ))}
       </nav>

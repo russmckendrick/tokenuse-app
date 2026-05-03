@@ -12,7 +12,13 @@ const { latestVersion, releaseHref } = Astro.props;
 
 <header id="top" class="hero">
   <div class="hero-image-wrap">
-    <picture>
+    <video class="hero-image hero-video hero-video-wide" autoplay muted loop playsinline poster={wideHero.src}>
+      <source src="/vids/hero-wide.mp4" type="video/mp4" />
+    </video>
+    <video class="hero-image hero-video hero-video-tall" autoplay muted loop playsinline poster={tallHero.src}>
+      <source src="/vids/hero-tall.mp4" type="video/mp4" />
+    </video>
+    <picture class="hero-image-static">
       <source media="(max-width: 760px)" srcset={tallHero.src} width={tallHero.width} height={tallHero.height} />
       <img
         class="hero-image"

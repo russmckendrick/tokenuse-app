@@ -156,6 +156,18 @@ kbd {
   color: var(--ink);
 }
 
+.nav-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-text-link svg {
+  display: block;
+  flex: none;
+  opacity: 0.7;
+}
+
 .nav-cta {
   display: inline-flex;
   gap: 8px;
@@ -256,14 +268,29 @@ kbd {
   box-shadow: var(--shadow-2);
 }
 
-.hero-image-wrap picture {
-  display: block;
-}
-
 .hero-image {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hero-video-tall {
+  display: none;
+}
+
+.hero-image-static {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video-wide,
+  .hero-video-tall {
+    display: none !important;
+  }
+
+  .hero-image-static {
+    display: block;
+  }
 }
 
 .hero-vignette {
@@ -520,7 +547,6 @@ kbd {
   padding-bottom: 56px;
 }
 
-.tools-grid,
 .features-row,
 .how-grid {
   display: grid;
@@ -528,8 +554,15 @@ kbd {
 }
 
 .tools-grid {
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
   align-items: stretch;
+}
+
+.tools-grid .tool-card {
+  flex: 0 0 calc((100% - 44px) / 3);
 }
 
 .tool-card,
@@ -941,10 +974,19 @@ kbd {
 }
 
 .footer-cols a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 4px 0;
   color: var(--ink-dim);
   font-size: 14px;
+}
+
+.footer-cols a svg {
+  display: block;
+  flex: none;
+  color: var(--brass-2);
+  opacity: 0.8;
 }
 
 .footer-cols a:hover {
@@ -1065,6 +1107,26 @@ kbd {
   height: 1px;
   margin-right: 8px;
   background: var(--line-2);
+}
+
+.docs-side-link.has-icon {
+  gap: 8px;
+}
+
+.docs-side-link.has-icon.nested::before {
+  display: none;
+}
+
+.docs-side-link svg {
+  flex-shrink: 0;
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+.docs-side-link.active svg,
+.docs-side-link:hover svg {
+  color: var(--coral);
+  opacity: 1;
 }
 
 .docs-source-note {
@@ -1533,9 +1595,12 @@ kbd {
     font-size: 58px;
   }
 
-  .tools-grid,
   .docs-card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tools-grid .tool-card {
+    flex: 0 0 calc((100% - 22px) / 2);
   }
 
   .features-row,
@@ -1563,6 +1628,14 @@ kbd {
 }
 
 @media (max-width: 760px) {
+  .hero-video-wide {
+    display: none;
+  }
+
+  .hero-video-tall {
+    display: block;
+  }
+
   .nav-inner,
   .hero,
   .section,
@@ -1605,11 +1678,14 @@ kbd {
     font-size: 38px;
   }
 
-  .tools-grid,
   .docs-card-grid,
   .footer-cols,
   .release-pager {
     grid-template-columns: 1fr;
+  }
+
+  .tools-grid .tool-card {
+    flex: 0 0 100%;
   }
 
   .install-card {

@@ -1,8 +1,9 @@
 ---
 import Logomark from "./Logomark.astro";
+import NavIcon from "./NavIcon.astro";
+import { footerGroups } from "../config/nav";
 import { getLatestRelease } from "../lib/releases";
 
-const githubUrl = "https://github.com/russmckendrick/tokenuse";
 const latestRelease = await getLatestRelease();
 const latestVersion = latestRelease?.tag ?? "latest release";
 ---
@@ -14,30 +15,20 @@ const latestVersion = latestRelease?.tag ?? "latest release";
       <span class="brand-word">Token Use</span>
     </div>
     <div class="footer-cols">
-      <div>
-        <div class="footer-h">Product</div>
-        <a href="/#dashboard">Dashboard</a>
-        <a href="/#tools">Supported tools</a>
-        <a href="/#install">Install</a>
-        <a href={githubUrl}>GitHub</a>
-      </div>
-      <div>
-        <div class="footer-h">Docs</div>
-        <a href="/docs/guides/installation/">Installation</a>
-        <a href="/docs/guides/tui-usage/">TUI usage</a>
-        <a href="/docs/guides/desktop-usage/">Desktop app</a>
-        <a href="/docs/development/architecture/">Architecture</a>
-        <a href="/docs/development/tools/">Tool parsers</a>
-        <a href="/releases/">Releases</a>
-        <a href="/docs/guides/tui-usage/#keyboard">Keybindings</a>
-      </div>
-      <div>
-        <div class="footer-h">Source</div>
-        <a href={`${githubUrl}/issues`}>Issues</a>
-        <a href={`${githubUrl}/discussions`}>Discussions</a>
-        <a href={`${githubUrl}/blob/main/LICENSE`}>License</a>
-        <a href={`${githubUrl}/tree/main/docs`}>Repository docs</a>
-      </div>
+      {footerGroups.map((group) => (
+        <div>
+          <div class="footer-h">{group.heading}</div>
+          {group.items.map((item) => (
+            <a
+              href={item.href}
+              {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
+              {item.icon && <NavIcon icon={item.icon} size={13} />}
+              {item.label}
+            </a>
+          ))}
+        </div>
+      ))}
     </div>
     <div class="footer-line">
       <span>2026 tokenuse - all your tokens, all on your machine.</span>

@@ -1,8 +1,7 @@
 ---
-import GitHubIcon from "./GitHubIcon.astro";
 import Logomark from "./Logomark.astro";
-
-const githubUrl = "https://github.com/russmckendrick/tokenuse";
+import NavIcon from "./NavIcon.astro";
+import { headerNav } from "../config/nav";
 ---
 
 <nav class="nav">
@@ -11,14 +10,31 @@ const githubUrl = "https://github.com/russmckendrick/tokenuse";
       <Logomark gradient gradientId="site-nav-bars-gradient" />
       <span class="brand-word">Token Use</span>
     </a>
+
     <div class="nav-links" aria-label="Primary navigation">
-      <a href="/docs/">Docs</a>
-      <a href="/releases/">Releases</a>
-      <a href={githubUrl} class="nav-cta">
-        <GitHubIcon />
-        <span>GitHub</span>
-      </a>
+      {headerNav.map((item) =>
+        item.cta ? (
+          <a
+            href={item.href}
+            class="nav-cta"
+            {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
+            {item.icon && <NavIcon icon={item.icon} size={14} />}
+            <span>{item.label}</span>
+          </a>
+        ) : (
+          <a
+            href={item.href}
+            class="nav-text-link"
+            {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
+            {item.icon && <NavIcon icon={item.icon} size={14} />}
+            {item.label}
+          </a>
+        )
+      )}
     </div>
+
     <details class="nav-menu">
       <summary aria-label="Open primary navigation">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
@@ -26,12 +42,15 @@ const githubUrl = "https://github.com/russmckendrick/tokenuse";
         </svg>
       </summary>
       <div class="nav-menu-panel" aria-label="Primary navigation">
-        <a href="/docs/">Docs</a>
-        <a href="/releases/">Releases</a>
-        <a href={githubUrl}>
-          <GitHubIcon />
-          <span>GitHub</span>
-        </a>
+        {headerNav.map((item) => (
+          <a
+            href={item.href}
+            {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
+            {item.icon && <NavIcon icon={item.icon} size={16} />}
+            <span>{item.label}</span>
+          </a>
+        ))}
       </div>
     </details>
   </div>
