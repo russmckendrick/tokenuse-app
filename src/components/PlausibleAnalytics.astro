@@ -1,0 +1,15 @@
+<script>
+  import { init } from "@plausible-analytics/tracker";
+  import { SITE_URL } from "../lib/seo";
+
+  init({
+    domain: new URL(SITE_URL).hostname,
+    autoCapturePageviews: true,
+    bindToWindow: true,
+    captureOnLocalhost: false,
+    outboundLinks: true,
+    fileDownloads: true,
+    formSubmissions: true,
+    logging: import.meta.env.DEV,
+  });
+</script>
