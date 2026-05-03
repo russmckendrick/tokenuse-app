@@ -1,9 +1,10 @@
 import type { APIRoute } from "astro";
 import { markdownHeaders, renderDocsPageMarkdown } from "../../lib/agent-content";
-import { docsPages, getDocsPageBySlug, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";
+import { getAllDocsPages, getDocsPageBySlug, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";
 
-export function getStaticPaths() {
-  return docsPages
+export async function getStaticPaths() {
+  const all = await getAllDocsPages();
+  return all
     .filter((page) => page.href !== "/docs/")
     .map((page) => ({
       params: { slug: slugForDocsPage(page) },

@@ -1,9 +1,10 @@
 ---
 import DocsPage from "../../components/DocsPage.astro";
-import { docsPages, getDocsEntry, getDocsPageBySlug, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";
+import { docsPages, getDocsEntry, getDocsPageBySlug, getToolDocsPages, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";
 
 export async function getStaticPaths() {
-  return docsPages
+  const toolPages = await getToolDocsPages();
+  return [...docsPages, ...toolPages]
     .filter((page) => page.href !== "/docs/")
     .map((page) => ({
       params: { slug: slugForDocsPage(page) },

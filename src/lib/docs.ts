@@ -1,6 +1,38 @@
-import { getEntry, type CollectionEntry } from "astro:content";
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 
 export type DocsEntry = CollectionEntry<"tokenuseDocs">;
+
+const KNOWN_TOOL_META: Record<string, { navLabel: string; description: string }> = {
+  "claude-code": {
+    navLabel: "Claude Code",
+    description: "Claude Code session paths, JSONL record shape, token mapping, and tool extraction.",
+  },
+  codex: {
+    navLabel: "Codex",
+    description: "Codex rollout validation, token-count deltas, rate-limit snapshots, and project detection.",
+  },
+  cursor: {
+    navLabel: "Cursor",
+    description: "Cursor SQLite discovery, bubble and Agent KV parsing, estimation, and known limitations.",
+  },
+  copilot: {
+    navLabel: "GitHub Copilot",
+    description: "Copilot CLI and VS Code transcript ingestion, model inference, and tool normalization.",
+  },
+  gemini: {
+    navLabel: "Gemini",
+    description: "Gemini CLI session discovery, JSON/JSONL chat parsing, token and thought tracking.",
+  },
+};
+
+function toTitleCase(slug: string): string {
+  return slug.replace(/-./g, (m) => " " + m[1].toUpperCase()).replace(/^./, (m) => m.toUpperCase());
+}
+
+function extractTitle(body: string | undefined, fallback: string): string {
+  const match = body?.match(/^#\s+(.+)$/m);
+  return match ? match[1].trim() : fallback;
+}
 
 export interface DocsPageMeta {
   id: string;
@@ -109,46 +141,6 @@ export const docsPages = [
     eyebrow: "Development",
     description: "How tokenuse discovers, validates, parses, deduplicates, and prices local AI tool records.",
   },
-  {
-    id: "development/tools/claude-code",
-    entryId: "development/tools/claude-code",
-    href: "/docs/development/tools/claude-code/",
-    title: "Claude Code",
-    navLabel: "Claude Code",
-    eyebrow: "Tool parser",
-    description: "Claude Code session paths, JSONL record shape, token mapping, and tool extraction.",
-    level: 1,
-  },
-  {
-    id: "development/tools/codex",
-    entryId: "development/tools/codex",
-    href: "/docs/development/tools/codex/",
-    title: "Codex",
-    navLabel: "Codex",
-    eyebrow: "Tool parser",
-    description: "Codex rollout validation, token-count deltas, rate-limit snapshots, and project detection.",
-    level: 1,
-  },
-  {
-    id: "development/tools/cursor",
-    entryId: "development/tools/cursor",
-    href: "/docs/development/tools/cursor/",
-    title: "Cursor",
-    navLabel: "Cursor",
-    eyebrow: "Tool parser",
-    description: "Cursor SQLite discovery, bubble and Agent KV parsing, estimation, and known limitations.",
-    level: 1,
-  },
-  {
-    id: "development/tools/copilot",
-    entryId: "development/tools/copilot",
-    href: "/docs/development/tools/copilot/",
-    title: "GitHub Copilot",
-    navLabel: "GitHub Copilot",
-    eyebrow: "Tool parser",
-    description: "Copilot CLI and VS Code transcript ingestion, model inference, and tool normalization.",
-    level: 1,
-  },
 ] satisfies DocsPageMeta[];
 
 const guideIds = ["overview", "guides/installation", "guides/tui-usage", "guides/desktop-usage"];
@@ -159,34 +151,58 @@ const developmentIds = [
   "development/source-control",
   "development/deployments",
   "development/tools",
-  "development/tools/claude-code",
-  "development/tools/codex",
-  "development/tools/cursor",
-  "development/tools/copilot",
 ];
 
 function pagesFor(ids: string[]): DocsPageMeta[] {
   return ids.map((id) => getDocsPageById(id));
 }
 
-export const docsNavGroups: DocsNavGroup[] = [
-  { label: "Guides", items: pagesFor(guideIds) },
-  { label: "Development", items: pagesFor(developmentIds) },
-  {
-    label: "Project",
-    items: [
-      {
-        id: "releases",
-        entryId: "",
-        href: "/releases/",
-        title: "Releases",
-        navLabel: "Releases",
-        eyebrow: "GitHub",
-        description: "Release notes are fetched from GitHub releases at build time.",
-      },
-    ],
-  },
-];
+export async function getToolDocsPages(): Promise<DocsPageMeta[]> {
+  const entries = await getCollection("tokenuseDocs");
+  return entries
+    .filter((e) => e.id.startsWith("development/tools/") && e.id !== "development/tools/readme")
+    .map((e) => {
+      const slug = e.id.replace("development/tools/", "");
+      const known = KNOWN_TOOL_META[slug];
+      const displayName = known?.navLabel ?? extractTitle(e.body, toTitleCase(slug));
+      return {
+        id: `development/tools/${slug}`,
+        entryId: e.id,
+        href: `/docs/development/tools/${slug}/`,
+        title: displayName,
+        navLabel: displayName,
+        eyebrow: "Tool parser",
+        description: known?.description ?? `Parser documentation for ${displayName}.`,
+        level: 1,
+      } satisfies DocsPageMeta;
+    });
+}
+
+export async function getAllDocsPages(): Promise<DocsPageMeta[]> {
+  return [...docsPages, ...(await getToolDocsPages())];
+}
+
+export async function getDocsNavGroups(): Promise<DocsNavGroup[]> {
+  const toolPages = await getToolDocsPages();
+  return [
+    { label: "Guides", items: pagesFor(guideIds) },
+    { label: "Development", items: [...pagesFor(developmentIds), ...toolPages] },
+    {
+      label: "Project",
+      items: [
+        {
+          id: "releases",
+          entryId: "",
+          href: "/releases/",
+          title: "Releases",
+          navLabel: "Releases",
+          eyebrow: "GitHub",
+          description: "Release notes are fetched from GitHub releases at build time.",
+        },
+      ],
+    },
+  ];
+}
 
 export const overviewCardIds = [
   "guides/installation",

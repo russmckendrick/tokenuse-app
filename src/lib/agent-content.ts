@@ -1,4 +1,4 @@
-import { docsPages, getDocsEntry, type DocsPageMeta } from "./docs";
+import { getAllDocsPages, getDocsEntry, type DocsPageMeta } from "./docs";
 import { getReleases, type Release } from "./releases";
 import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL, absoluteSiteUrl } from "./seo";
 
@@ -81,7 +81,7 @@ export async function renderHomeMarkdown(): Promise<string> {
 }
 
 export async function renderDocsIndexMarkdown(): Promise<string> {
-  const items = await Promise.all(docsPages.map(renderDocsItem));
+  const items = await Promise.all((await getAllDocsPages()).map(renderDocsItem));
 
   return [
     "# Token Use Documentation",
@@ -143,7 +143,7 @@ export function renderReleaseMarkdown(release: Release): string {
 
 export async function renderLlmsTxt(): Promise<string> {
   const releases = await getReleases();
-  const docsItems = await Promise.all(docsPages.map(renderDocsItem));
+  const docsItems = await Promise.all((await getAllDocsPages()).map(renderDocsItem));
 
   return [
     `# ${SITE_NAME}`,

@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import sourceInfo from "../../.generated/tokenuse-docs/source.json";
-import { docsPages } from "../lib/docs";
+import { getAllDocsPages } from "../lib/docs";
 import { getReleases } from "../lib/releases";
 import { absoluteSiteUrl } from "../lib/seo";
 
@@ -40,10 +40,11 @@ function renderUrl(entry: SitemapEntry): string {
 
 export const GET = (async () => {
   const releases = await getReleases();
+  const allDocs = await getAllDocsPages();
   const docsLastMod = dateOnly(sourceInfo.generatedAt);
   const entries: SitemapEntry[] = [
     { path: "/", lastmod: docsLastMod, changefreq: "weekly", priority: "1.0" },
-    ...docsPages.map((page) => ({
+    ...allDocs.map((page) => ({
       path: page.href,
       lastmod: docsLastMod,
       changefreq: "monthly" as const,
