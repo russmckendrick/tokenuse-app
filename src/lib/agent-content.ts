@@ -5,11 +5,21 @@ import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL, absoluteSiteUrl } from "./seo
 export const READ_TOKENUSE_DOCS_SKILL_NAME = "read-tokenuse-docs";
 export const READ_TOKENUSE_DOCS_SKILL_PATH = "/.well-known/agent-skills/read-tokenuse-docs/SKILL.md";
 
-export function markdownHeaders(markdown: string): HeadersInit {
-  return {
+interface MarkdownHeadersOptions {
+  noindex?: boolean;
+}
+
+export function markdownHeaders(markdown: string, options: MarkdownHeadersOptions = {}): HeadersInit {
+  const headers: Record<string, string> = {
     "Content-Type": "text/markdown; charset=utf-8",
     "x-markdown-tokens": String(estimateMarkdownTokens(markdown)),
   };
+
+  if (options.noindex) {
+    headers["X-Robots-Tag"] = "noindex, follow";
+  }
+
+  return headers;
 }
 
 function estimateMarkdownTokens(markdown: string): number {

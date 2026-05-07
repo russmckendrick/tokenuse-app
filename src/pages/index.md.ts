@@ -5,6 +5,6 @@ export const GET = (async () => {
   const markdown = await renderHomeMarkdown();
 
   return new Response(markdown, {
-    headers: markdownHeaders(markdown),
+    headers: markdownHeaders(markdown, { noindex: true }),
   });
 }) satisfies APIRoute;

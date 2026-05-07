@@ -23,6 +23,6 @@ export const GET = (async ({ params, props }) => {
   const markdown = await renderDocsPageMarkdown(page);
 
   return new Response(markdown, {
-    headers: markdownHeaders(markdown),
+    headers: markdownHeaders(markdown, { noindex: true }),
   });
 }) satisfies APIRoute;

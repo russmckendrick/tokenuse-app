@@ -19,6 +19,6 @@ export const GET = (({ props }) => {
   const markdown = renderReleaseMarkdown((props as Props).release);
 
   return new Response(markdown, {
-    headers: markdownHeaders(markdown),
+    headers: markdownHeaders(markdown, { noindex: true }),
   });
 }) satisfies APIRoute;
