@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-zoom.css";
@@ -20,11 +19,6 @@ interface Props {
 }
 
 const { variant = "landing", platform = "desktop" } = Astro.props;
-const imageWidths = variant === "docs" ? [320, 480, 640, 840] : [360, 520, 720, 960];
-const imageSizes =
-  variant === "docs"
-    ? "(max-width: 760px) calc(50vw - 26px), (max-width: 1100px) calc(33vw - 32px), 170px"
-    : "(max-width: 760px) calc(50vw - 32px), (max-width: 1100px) calc(33vw - 34px), 236px";
 
 const desktopShots = [
   {
@@ -141,10 +135,10 @@ const gallery = platform === "tui"
         aria-label={`Open ${shot.platform} ${shot.title} screenshot`}
       >
         <span class="screenshot-gallery-media">
-          <Image
-            src={shot.image}
-            widths={imageWidths}
-            sizes={imageSizes}
+          <img
+            src={shot.image.src}
+            width={shot.image.width}
+            height={shot.image.height}
             alt={shot.alt}
             class="screenshot-gallery-image"
             loading={index < 4 ? "eager" : "lazy"}
