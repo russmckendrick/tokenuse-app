@@ -1,0 +1,199 @@
+---
+import { Image } from "astro:assets";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-zoom.css";
+import desktopOverview from "../assets/desktop/001.png";
+import desktopDeepDive from "../assets/desktop/002.png";
+import desktopUsage from "../assets/desktop/003.png";
+import desktopInsights from "../assets/desktop/004.png";
+import desktopConfig from "../assets/desktop/005.png";
+import tuiOverview from "../assets/tui/001.png";
+import tuiDeepDive from "../assets/tui/002.png";
+import tuiUsage from "../assets/tui/003.png";
+import tuiInsights from "../assets/tui/004.png";
+import tuiConfig from "../assets/tui/005.png";
+
+interface Props {
+  variant?: "landing" | "docs";
+  platform?: "desktop" | "tui";
+}
+
+const { variant = "landing", platform = "desktop" } = Astro.props;
+const imageWidths = variant === "docs" ? [320, 480, 640, 840] : [360, 520, 720, 960];
+const imageSizes =
+  variant === "docs"
+    ? "(max-width: 760px) calc(50vw - 26px), (max-width: 1100px) calc(33vw - 32px), 170px"
+    : "(max-width: 760px) calc(50vw - 32px), (max-width: 1100px) calc(33vw - 34px), 236px";
+
+const desktopShots = [
+  {
+    image: desktopOverview,
+    platform: "Desktop",
+    title: "Overview",
+    caption: "Dashboard, project spend, model mix, commands, and MCP activity.",
+    alt: "Token Use desktop app overview showing cost, calls, sessions, cache hit, input and output tokens, activity charts, project spend, model spend, shell commands, and MCP servers.",
+  },
+  {
+    image: desktopDeepDive,
+    platform: "Desktop",
+    title: "Deep Dive",
+    caption: "Trends, project drill-downs, top sessions, and cost tables.",
+    alt: "Token Use desktop app deep dive screen showing activity trends, by-project spend, top sessions, project spend by tool, model efficiency, shell commands, and MCP servers.",
+  },
+  {
+    image: desktopUsage,
+    platform: "Desktop",
+    title: "Usage",
+    caption: "Quota status and model usage beside local activity.",
+    alt: "Token Use desktop app usage screen showing Claude Code, Codex, Gemini, Cursor, and Copilot console usage panels with pulse charts, costs, calls, tokens, and quota rows.",
+  },
+  {
+    image: desktopInsights,
+    platform: "Desktop",
+    title: "Insights",
+    caption: "Signals, risks, weekly savings, and review actions.",
+    alt: "Token Use desktop app insights dashboard showing current read status, estimated weekly savings, risk and warning counts, top actions, signal map, and latest issue.",
+  },
+  {
+    image: desktopConfig,
+    platform: "Desktop",
+    title: "Config",
+    caption: "Currency, pricing books, integrations, local data, and desktop settings.",
+    alt: "Token Use desktop app config screen showing money and data, tool integrations, advice engine, local data, and desktop settings.",
+  },
+];
+
+const tuiShots = [
+  {
+    image: tuiOverview,
+    platform: "TUI",
+    title: "Overview",
+    caption: "The same reporting shape in a keyboard-first layout.",
+    alt: "Token Use TUI overview showing cost, calls, sessions, cache hit, input and output tokens, activity pulse, project spend, model efficiency, shell commands, and MCP servers.",
+  },
+  {
+    image: tuiDeepDive,
+    platform: "TUI",
+    title: "Deep Dive",
+    caption: "Trend, project, session, model, command, and server panels.",
+    alt: "Token Use TUI deep dive screen showing activity trend, by-project spend, top sessions, project spend by tool, model efficiency, shell commands, and MCP servers.",
+  },
+  {
+    image: tuiUsage,
+    platform: "TUI",
+    title: "Usage",
+    caption: "Quota status, pulse bars, model rows, calls, tokens, and reset times.",
+    alt: "Token Use TUI usage screen showing Claude Code, Codex, Gemini, Cursor, and Copilot console usage panels with pulse charts, costs, calls, tokens, quota reset times, and plan names.",
+  },
+  {
+    image: tuiInsights,
+    platform: "TUI",
+    title: "Insights",
+    caption: "Savings, risk counts, advice, evidence, and shortcuts.",
+    alt: "Token Use TUI insights screen showing estimated weekly savings, risks, warnings, info, advice text, warnings, evidence, and keyboard shortcuts.",
+  },
+  {
+    image: tuiConfig,
+    platform: "TUI",
+    title: "Config",
+    caption: "Local files, pricing sources, limits, and cleanup actions.",
+    alt: "Token Use TUI configuration screen showing currency override, exchange rates, pricing books, tool integrations, advice tool, local files, pricing sources, and keyboard shortcuts.",
+  },
+];
+
+const gallery = platform === "tui"
+  ? {
+      id: "tui",
+      eyebrow: "TUI gallery",
+      title: "Terminal UI screens.",
+      note: "Five keyboard-first views",
+      shots: tuiShots,
+    }
+  : {
+      id: "desktop",
+      eyebrow: "Desktop gallery",
+      title: "Desktop app screens.",
+      note: "Five native app views",
+      shots: desktopShots,
+    };
+---
+
+<section class:list={["screenshot-gallery", `screenshot-gallery-${variant}`]} aria-labelledby={`screenshot-gallery-title-${variant}-${gallery.id}`}>
+  <header class="screenshot-gallery-top">
+    <div>
+      <p class="screenshot-gallery-eyebrow">{gallery.eyebrow}</p>
+      <h3 id={`screenshot-gallery-title-${variant}-${gallery.id}`}>{gallery.title}</h3>
+    </div>
+    <p class="screenshot-gallery-count">{gallery.note}</p>
+  </header>
+
+  <div class="screenshot-gallery-grid" data-lightgallery>
+    {gallery.shots.map((shot, index) => (
+      <a
+        class="screenshot-gallery-link"
+        href={shot.image.src}
+        data-src={shot.image.src}
+        data-lg-size={`${shot.image.width}-${shot.image.height}`}
+        data-sub-html={`<strong>${shot.platform} / ${shot.title}</strong><span>${shot.caption}</span>`}
+        data-thumb={shot.image.src}
+        style={`--shot-index: ${index};`}
+        aria-label={`Open ${shot.platform} ${shot.title} screenshot`}
+      >
+        <span class="screenshot-gallery-media">
+          <Image
+            src={shot.image}
+            widths={imageWidths}
+            sizes={imageSizes}
+            alt={shot.alt}
+            class="screenshot-gallery-image"
+            loading={index < 4 ? "eager" : "lazy"}
+            decoding="async"
+          />
+        </span>
+        <span class="screenshot-gallery-label">
+          <span>{shot.platform}</span>
+          <strong>{shot.title}</strong>
+        </span>
+      </a>
+    ))}
+  </div>
+</section>
+
+<script>
+  import lightGallery from "lightgallery";
+  import lgThumbnail from "lightgallery/plugins/thumbnail";
+  import lgZoom from "lightgallery/plugins/zoom";
+
+  const gallerySelector = "[data-lightgallery]";
+
+  function initScreenshotGalleries() {
+    document.querySelectorAll<HTMLElement>(gallerySelector).forEach((gallery) => {
+      if (gallery.dataset.lightgalleryReady === "true") return;
+      gallery.dataset.lightgalleryReady = "true";
+
+      lightGallery(gallery, {
+        selector: ".screenshot-gallery-link",
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: "0000-0000-000-0000",
+        speed: 360,
+        mode: "lg-fade",
+        download: false,
+        counter: true,
+        thumbnail: true,
+        thumbWidth: 108,
+        thumbHeight: "72px",
+        actualSize: true,
+        zoomFromOrigin: true,
+        mobileSettings: {
+          controls: true,
+          showCloseIcon: true,
+          download: false,
+        },
+      });
+    });
+  }
+
+  initScreenshotGalleries();
+  document.addEventListener("astro:page-load", initScreenshotGalleries);
+</script>

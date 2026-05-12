@@ -1,5 +1,5 @@
 ---
-import TerminalPreview from "./TerminalPreview.astro";
+import ScreenshotGallery from "../ScreenshotGallery.astro";
 ---
 
 <section id="dashboard" class="section section-terminal">
@@ -15,5 +15,8 @@ import TerminalPreview from "./TerminalPreview.astro";
       <kbd>i</kbd> for Insights, and <kbd>e</kbd> for reports.
     </p>
   </div>
-  <TerminalPreview />
+  <div class="landing-gallery-stack">
+    <ScreenshotGallery platform="desktop" />
+    <ScreenshotGallery platform="tui" />
+  </div>
 </section>

@@ -1,7 +1,7 @@
 ---
 import { render } from "astro:content";
-import desktopApp from "../assets/desktop-app.png";
 import DocsLayout from "../layouts/DocsLayout.astro";
+import ScreenshotGallery from "./ScreenshotGallery.astro";
 import { type DocsEntry, type DocsPageMeta } from "../lib/docs";
 import { SITE_NAME, absoluteSiteUrl } from "../lib/seo";
 
@@ -14,6 +14,7 @@ const { entry, page } = Astro.props;
 const { Content, headings } = await render(entry);
 const tocHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= 3);
 const isDesktop = page.id === "guides/desktop-usage";
+const isTui = page.id === "guides/tui-usage";
 const pageUrl = absoluteSiteUrl(page.href);
 const docsJsonLd = {
   "@context": "https://schema.org",
@@ -43,17 +44,11 @@ const docsJsonLd = {
   </header>
 
   {isDesktop && (
-    <figure class="docs-feature-figure">
-      <img
-        src={desktopApp.src}
-        width={desktopApp.width}
-        height={desktopApp.height}
-        alt="Token Use desktop app showing overview metrics, filters, model spend, project spend, and shell command panels."
-        loading="eager"
-        decoding="async"
-      />
-      <figcaption>The desktop shell uses the same local archive, filters, refresh, config, and export logic as the TUI.</figcaption>
-    </figure>
+    <ScreenshotGallery variant="docs" platform="desktop" />
+  )}
+
+  {isTui && (
+    <ScreenshotGallery variant="docs" platform="tui" />
   )}
 
   <div class="docs-markdown">
