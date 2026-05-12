@@ -2,7 +2,7 @@
 import DocsPage from "../../components/DocsPage.astro";
 import { getDocsEntry, getDocsPageById } from "../../lib/docs";
 
-const page = getDocsPageById("overview");
+const page = await getDocsPageById("overview");
 const entry = await getDocsEntry(page);
 ---
 

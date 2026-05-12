@@ -105,7 +105,9 @@ export const footerGroups: FooterGroup[] = [
       { label: "Installation",    href: "/docs/guides/installation/",         icon: { paths: icons.download } },
       { label: "TUI usage",       href: "/docs/guides/tui-usage/",            icon: { paths: icons.terminal } },
       { label: "Desktop app",     href: "/docs/guides/desktop-usage/",        icon: { paths: icons.desktop } },
+      { label: "Insights",        href: "/docs/guides/insights/",             icon: { paths: icons.grid } },
       { label: "Architecture",    href: "/docs/development/architecture/",    icon: { paths: icons.layers } },
+      { label: "Pricing",         href: "/docs/development/pricing/",         icon: { paths: icons.scale } },
       { label: "Tool parsers",    href: "/docs/development/tools/",           icon: { paths: icons.wrench } },
       { label: "Releases",        href: "/releases/",                         icon: { paths: icons.tag } },
       { label: "Keybindings",     href: "/docs/guides/tui-usage/#keyboard",   icon: { paths: icons.keybindings } },
@@ -134,10 +136,12 @@ export const docsNavIcons: Record<string, NavIconDef> = {
   "guides/installation":            { paths: icons.download },
   "guides/tui-usage":               { paths: icons.terminal },
   "guides/desktop-usage":           { paths: icons.desktop },
+  "guides/insights":                { paths: icons.grid },
 
   // Development section
   "development":                    { paths: icons.folder },
   "development/architecture":       { paths: icons.layers },
+  "development/pricing":            { paths: icons.scale },
   "development/local-development":  { paths: icons.wrench },
   "development/source-control":     { paths: icons.arrows },
   "development/deployments":        { paths: icons.rocket },
@@ -149,6 +153,8 @@ export const docsNavIcons: Record<string, NavIconDef> = {
   "development/tools/cursor":       { paths: toolIcons.cursor,  viewBox: "0 0 24 24", stroke: false },
   "development/tools/copilot":      { paths: toolIcons.copilot, viewBox: "0 0 16 16", stroke: false },
   "development/tools/gemini":       { paths: toolIcons.gemini,  viewBox: "0 0 24 24", stroke: false },
+  "development/tools/claude-subscription": { paths: toolIcons.claude, viewBox: "0 0 24 24", stroke: false },
+  "development/tools/codex-subscription":  { paths: toolIcons.codex,  viewBox: "0 0 24 24", stroke: false },
 
   // Project
   "releases":                       { paths: icons.tag },

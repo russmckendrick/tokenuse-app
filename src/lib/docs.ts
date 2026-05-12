@@ -2,38 +2,6 @@ import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 
 export type DocsEntry = CollectionEntry<"tokenuseDocs">;
 
-const KNOWN_TOOL_META: Record<string, { navLabel: string; description: string }> = {
-  "claude-code": {
-    navLabel: "Claude Code",
-    description: "Claude Code session paths, JSONL record shape, token mapping, and tool extraction.",
-  },
-  codex: {
-    navLabel: "Codex",
-    description: "Codex rollout validation, token-count deltas, rate-limit snapshots, and project detection.",
-  },
-  cursor: {
-    navLabel: "Cursor",
-    description: "Cursor SQLite discovery, bubble and Agent KV parsing, estimation, and known limitations.",
-  },
-  copilot: {
-    navLabel: "GitHub Copilot",
-    description: "Copilot CLI and VS Code transcript ingestion, model inference, and tool normalization.",
-  },
-  gemini: {
-    navLabel: "Gemini",
-    description: "Gemini CLI session discovery, JSON/JSONL chat parsing, token and thought tracking.",
-  },
-};
-
-function toTitleCase(slug: string): string {
-  return slug.replace(/-./g, (m) => " " + m[1].toUpperCase()).replace(/^./, (m) => m.toUpperCase());
-}
-
-function extractTitle(body: string | undefined, fallback: string): string {
-  const match = body?.match(/^#\s+(.+)$/m);
-  return match ? match[1].trim() : fallback;
-}
-
 export interface DocsPageMeta {
   id: string;
   entryId: string;
@@ -43,6 +11,8 @@ export interface DocsPageMeta {
   eyebrow: string;
   description: string;
   level?: number;
+  group?: string;
+  order?: number;
 }
 
 export interface DocsNavGroup {
@@ -50,143 +20,306 @@ export interface DocsNavGroup {
   items: DocsPageMeta[];
 }
 
-export const docsPages = [
-  {
-    id: "overview",
-    entryId: "readme",
-    href: "/docs/",
+type DocsPageOverride = Partial<
+  Pick<DocsPageMeta, "title" | "navLabel" | "eyebrow" | "description" | "level" | "group" | "order">
+>;
+
+const DOC_META: Record<string, DocsPageOverride> = {
+  overview: {
     title: "Documentation",
     navLabel: "Overview",
     eyebrow: "Start here",
+    group: "Guides",
+    order: 0,
     description: "The working manual for tokenuse: install it, use it, develop it, and follow project releases.",
   },
-  {
-    id: "guides/installation",
-    entryId: "guides/installation",
-    href: "/docs/guides/installation/",
-    title: "Installation",
+  "guides/installation": {
     navLabel: "Installation",
     eyebrow: "Guides",
-    description: "Install the TUI and macOS desktop app from Homebrew, or download TUI release binaries.",
+    group: "Guides",
+    order: 10,
+    description: "Install the TUI and desktop app from Homebrew or GitHub Releases.",
   },
-  {
-    id: "guides/tui-usage",
-    entryId: "guides/tui-usage",
-    href: "/docs/guides/tui-usage/",
-    title: "TUI Usage",
+  "guides/tui-usage": {
     navLabel: "TUI usage",
     eyebrow: "Guides",
-    description: "Navigate the dashboard, filters, keyboard shortcuts, config, session drill-down, Usage page, and export.",
+    group: "Guides",
+    order: 20,
+    description: "Navigate the dashboard, filters, keyboard shortcuts, config, session drill-down, reports, and Usage.",
   },
-  {
-    id: "guides/desktop-usage",
-    entryId: "guides/desktop-usage",
-    href: "/docs/guides/desktop-usage/",
-    title: "Desktop App Usage",
+  "guides/desktop-usage": {
     navLabel: "Desktop app usage",
     eyebrow: "Guides",
-    description: "Use the Tauri desktop app for local refresh, filtering, config, session drill-down, and export.",
+    group: "Guides",
+    order: 30,
+    description: "Use the Tauri desktop app for local refresh, filtering, config, Insights, reports, and export.",
   },
-  {
-    id: "development",
-    entryId: "development/readme",
-    href: "/docs/development/",
-    title: "Development",
+  "guides/insights": {
+    navLabel: "Insights",
+    eyebrow: "Guides",
+    group: "Guides",
+    order: 40,
+    description: "Use local Signals and optional manual advice to spot model, cache, anomaly, and quota patterns.",
+  },
+  development: {
     navLabel: "Overview",
     eyebrow: "Development",
+    group: "Development",
+    order: 100,
     description: "Source layout and the maintainer docs to read before changing tokenuse.",
   },
-  {
-    id: "development/architecture",
-    entryId: "development/architecture",
-    href: "/docs/development/architecture/",
-    title: "Architecture",
+  "development/architecture": {
     navLabel: "Architecture",
     eyebrow: "Development",
+    group: "Development",
+    order: 110,
     description: "Follow the local archive, ingestion, aggregation, pricing, export, and frontend data flow.",
   },
-  {
-    id: "development/local-development",
-    entryId: "development/local-development",
-    href: "/docs/development/local-development/",
-    title: "Local Development",
+  "development/pricing": {
+    navLabel: "Pricing",
+    eyebrow: "Development",
+    group: "Development",
+    order: 120,
+    description: "Official-source pricing, cache-rate multipliers, parser caveats, and local pricing book refreshes.",
+  },
+  "development/local-development": {
     navLabel: "Local development",
     eyebrow: "Development",
+    group: "Development",
+    order: 130,
     description: "Run the TUI, desktop app, checks, generated data refreshes, and no-download builds locally.",
   },
-  {
-    id: "development/source-control",
-    entryId: "development/source-control",
-    href: "/docs/development/source-control/",
-    title: "Source Control",
+  "development/source-control": {
     navLabel: "Source control",
     eyebrow: "Development",
+    group: "Development",
+    order: 140,
     description: "Branch hygiene, generated files, docs boundaries, version bumps, and release-prep notes.",
   },
-  {
-    id: "development/deployments",
-    entryId: "development/deployments",
-    href: "/docs/development/deployments/",
-    title: "Deployments",
+  "development/deployments": {
     navLabel: "Deployments",
     eyebrow: "Development",
-    description: "Release workflows, binary assets, macOS notarization, and Homebrew tap automation.",
+    group: "Development",
+    order: 150,
+    description: "Release workflows, binary assets, desktop notarization, and Homebrew tap automation.",
   },
-  {
-    id: "development/tools",
-    entryId: "development/tools/readme",
-    href: "/docs/development/tools/",
+  "development/tools": {
     title: "Tool Ingestion",
     navLabel: "Tool parsers",
     eyebrow: "Development",
+    group: "Development",
+    order: 160,
     description: "How tokenuse discovers, validates, parses, deduplicates, and prices local AI tool records.",
   },
-] satisfies DocsPageMeta[];
+  "development/tools/claude-code": {
+    navLabel: "Claude Code",
+    eyebrow: "Tool parser",
+    group: "Development",
+    level: 1,
+    order: 200,
+    description: "Claude Code session paths, JSONL record shape, token mapping, and tool extraction.",
+  },
+  "development/tools/codex": {
+    navLabel: "Codex",
+    eyebrow: "Tool parser",
+    group: "Development",
+    level: 1,
+    order: 210,
+    description: "Codex rollout validation, token-count deltas, rate-limit snapshots, and project detection.",
+  },
+  "development/tools/cursor": {
+    navLabel: "Cursor",
+    eyebrow: "Tool parser",
+    group: "Development",
+    level: 1,
+    order: 220,
+    description: "Cursor SQLite discovery, bubble and Agent KV parsing, estimation, and known limitations.",
+  },
+  "development/tools/copilot": {
+    navLabel: "GitHub Copilot",
+    eyebrow: "Tool parser",
+    group: "Development",
+    level: 1,
+    order: 230,
+    description: "Copilot CLI and VS Code transcript ingestion, model inference, and tool normalization.",
+  },
+  "development/tools/gemini": {
+    navLabel: "Gemini",
+    eyebrow: "Tool parser",
+    group: "Development",
+    level: 1,
+    order: 240,
+    description: "Gemini CLI session discovery, JSON/JSONL chat parsing, token and thought tracking.",
+  },
+  "development/tools/claude-subscription": {
+    navLabel: "Claude.ai subscription",
+    eyebrow: "Limits adapter",
+    group: "Development",
+    level: 1,
+    order: 250,
+    description: "Opt-in Claude.ai quota gauges stored in the OS keychain and shown with Claude Code usage.",
+  },
+  "development/tools/codex-subscription": {
+    navLabel: "ChatGPT (Codex) subscription",
+    eyebrow: "Limits adapter",
+    group: "Development",
+    level: 1,
+    order: 260,
+    description: "Opt-in ChatGPT quota gauges stored in the OS keychain and shown with local Codex usage.",
+  },
+};
 
-const guideIds = ["overview", "guides/installation", "guides/tui-usage", "guides/desktop-usage"];
-const developmentIds = [
-  "development",
-  "development/architecture",
-  "development/local-development",
-  "development/source-control",
-  "development/deployments",
-  "development/tools",
-];
+const GROUP_ORDER: Record<string, number> = {
+  Guides: 0,
+  Development: 1,
+};
 
-function pagesFor(ids: string[]): DocsPageMeta[] {
-  return ids.map((id) => getDocsPageById(id));
+function normalizeEntryId(entryId: string): string {
+  return entryId.replace(/^README$/i, "readme").replace(/\/README$/gi, "/readme");
 }
 
-export async function getToolDocsPages(): Promise<DocsPageMeta[]> {
-  const entries = await getCollection("tokenuseDocs");
-  return entries
-    .filter((e) => e.id.startsWith("development/tools/") && e.id !== "development/tools/readme")
-    .map((e) => {
-      const slug = e.id.replace("development/tools/", "");
-      const known = KNOWN_TOOL_META[slug];
-      const displayName = known?.navLabel ?? extractTitle(e.body, toTitleCase(slug));
-      return {
-        id: `development/tools/${slug}`,
-        entryId: e.id,
-        href: `/docs/development/tools/${slug}/`,
-        title: displayName,
-        navLabel: displayName,
-        eyebrow: "Tool parser",
-        description: known?.description ?? `Parser documentation for ${displayName}.`,
-        level: 1,
-      } satisfies DocsPageMeta;
-    });
+function idForEntryId(entryId: string): string {
+  const normalized = normalizeEntryId(entryId);
+  if (normalized === "readme") return "overview";
+  if (normalized.endsWith("/readme")) return normalized.slice(0, -"/readme".length);
+  return normalized;
+}
+
+function hrefForEntryId(entryId: string): string {
+  const normalized = normalizeEntryId(entryId);
+  if (normalized === "readme") return "/docs/";
+  if (normalized.endsWith("/readme")) return `/docs/${normalized.slice(0, -"/readme".length)}/`;
+  return `/docs/${normalized}/`;
+}
+
+function toTitleCase(value: string): string {
+  return value
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, (match) => match.toUpperCase())
+    .replace(/\bTui\b/g, "TUI")
+    .replace(/\bApi\b/g, "API")
+    .replace(/\bCli\b/g, "CLI");
+}
+
+function fallbackTitle(id: string): string {
+  if (id === "overview") return "Documentation";
+  return toTitleCase(id.split("/").at(-1) ?? id);
+}
+
+function cleanMarkdown(value: string): string {
+  return value
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[`*_]/g, "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractTitle(body: string | undefined, fallback: string): string {
+  const match = body?.match(/^#\s+(.+)$/m);
+  return match ? cleanMarkdown(match[1]) : fallback;
+}
+
+function extractDescription(body: string | undefined, fallback: string): string {
+  if (!body) return fallback;
+
+  let inFence = false;
+  const paragraph: string[] = [];
+
+  for (const line of body.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith("```")) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
+    if (!trimmed) {
+      if (paragraph.length > 0) break;
+      continue;
+    }
+    if (/^(#|>|[-*]\s|\d+\.\s|\|)/.test(trimmed)) continue;
+
+    paragraph.push(trimmed);
+  }
+
+  const cleaned = cleanMarkdown(paragraph.join(" "));
+  if (!cleaned) return fallback;
+  return cleaned.length > 220 ? `${cleaned.slice(0, 217).trim()}...` : cleaned;
+}
+
+function inferredGroup(id: string): string {
+  if (id === "overview") return "Guides";
+  return toTitleCase(id.split("/")[0] ?? "Docs");
+}
+
+function inferredEyebrow(id: string, group: string): string {
+  if (id === "overview") return "Start here";
+  if (id.startsWith("development/tools/")) return "Tool parser";
+  return group;
+}
+
+function defaultOrder(page: DocsPageMeta): number {
+  if (page.order !== undefined) return page.order;
+  if (page.id.startsWith("development/tools/")) return 500;
+  return 400;
+}
+
+function sortPages(a: DocsPageMeta, b: DocsPageMeta): number {
+  const groupA = GROUP_ORDER[a.group ?? ""] ?? 99;
+  const groupB = GROUP_ORDER[b.group ?? ""] ?? 99;
+  if (groupA !== groupB) return groupA - groupB;
+
+  const orderA = defaultOrder(a);
+  const orderB = defaultOrder(b);
+  if (orderA !== orderB) return orderA - orderB;
+
+  return a.title.localeCompare(b.title);
+}
+
+function pageFromEntry(entry: DocsEntry): DocsPageMeta {
+  const id = idForEntryId(entry.id);
+  const override = DOC_META[id] ?? {};
+  const group = override.group ?? inferredGroup(id);
+  const title = override.title ?? extractTitle(entry.body, fallbackTitle(id));
+  const description = override.description ?? extractDescription(entry.body, `${title} documentation for Token Use.`);
+
+  return {
+    id,
+    entryId: entry.id,
+    href: hrefForEntryId(entry.id),
+    title,
+    navLabel: override.navLabel ?? title,
+    eyebrow: override.eyebrow ?? inferredEyebrow(id, group),
+    description,
+    level: override.level ?? (id.startsWith("development/tools/") ? 1 : undefined),
+    group,
+    order: override.order,
+  };
 }
 
 export async function getAllDocsPages(): Promise<DocsPageMeta[]> {
-  return [...docsPages, ...(await getToolDocsPages())];
+  const entries = await getCollection("tokenuseDocs");
+  return entries.map(pageFromEntry).sort(sortPages);
+}
+
+export async function getToolDocsPages(): Promise<DocsPageMeta[]> {
+  return (await getAllDocsPages()).filter((page) => page.id.startsWith("development/tools/") && page.id !== "development/tools");
 }
 
 export async function getDocsNavGroups(): Promise<DocsNavGroup[]> {
-  const toolPages = await getToolDocsPages();
+  const pages = await getAllDocsPages();
+  const groups = new Map<string, DocsPageMeta[]>();
+  for (const page of pages) {
+    const group = page.group ?? inferredGroup(page.id);
+    groups.set(group, [...(groups.get(group) ?? []), page]);
+  }
+
+  const navGroups = [...groups]
+    .sort(([a], [b]) => (GROUP_ORDER[a] ?? 99) - (GROUP_ORDER[b] ?? 99) || a.localeCompare(b))
+    .map(([label, items]) => ({ label, items }));
+
   return [
-    { label: "Guides", items: pagesFor(guideIds) },
-    { label: "Development", items: [...pagesFor(developmentIds), ...toolPages] },
+    ...navGroups,
     {
       label: "Project",
       items: [
@@ -208,19 +341,20 @@ export const overviewCardIds = [
   "guides/installation",
   "guides/tui-usage",
   "guides/desktop-usage",
+  "guides/insights",
   "development",
   "development/tools",
 ] as const;
 
-export function getDocsPageById(id: string): DocsPageMeta {
-  const page = docsPages.find((item) => item.id === id);
+export async function getDocsPageById(id: string): Promise<DocsPageMeta> {
+  const page = (await getAllDocsPages()).find((item) => item.id === id);
   if (!page) throw new Error(`Unknown docs page id: ${id}`);
   return page;
 }
 
-export function getDocsPageBySlug(slug: string | undefined): DocsPageMeta | undefined {
+export async function getDocsPageBySlug(slug: string | undefined): Promise<DocsPageMeta | undefined> {
   const href = slug ? `/docs/${slug.replace(/\/?$/, "/")}` : "/docs/";
-  return docsPages.find((page) => page.href === href);
+  return (await getAllDocsPages()).find((page) => page.href === href);
 }
 
 export function slugForDocsPage(page: DocsPageMeta): string | undefined {

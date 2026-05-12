@@ -3,7 +3,7 @@ export const SITE_NAME = "Token Use";
 
 export const DEFAULT_TITLE = "Token Use - AI Token Usage & Cost Tracker for Coding Tools";
 export const DEFAULT_DESCRIPTION =
-  "Track local AI coding token usage and costs across Claude Code, Codex, Cursor, and GitHub Copilot with a TUI and macOS desktop app.";
+  "Track local AI coding token usage, costs, quotas, and Insights across Claude Code, Codex, Cursor, GitHub Copilot, and Gemini with a TUI and desktop app.";
 export const DEFAULT_OG_IMAGE = "/opengraph/tokenuse-og.png";
 export const DEFAULT_OG_IMAGE_ALT =
   "Token Use social preview showing a broadcast studio for AI coding token and cost usage tracking.";

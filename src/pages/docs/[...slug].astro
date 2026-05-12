@@ -1,10 +1,10 @@
 ---
 import DocsPage from "../../components/DocsPage.astro";
-import { docsPages, getDocsEntry, getDocsPageBySlug, getToolDocsPages, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";
+import { getAllDocsPages, getDocsEntry, getDocsPageBySlug, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";
 
 export async function getStaticPaths() {
-  const toolPages = await getToolDocsPages();
-  return [...docsPages, ...toolPages]
+  const pages = await getAllDocsPages();
+  return pages
     .filter((page) => page.href !== "/docs/")
     .map((page) => ({
       params: { slug: slugForDocsPage(page) },
@@ -16,7 +16,7 @@ interface Props {
   page: DocsPageMeta;
 }
 
-const page = Astro.props.page ?? getDocsPageBySlug(Astro.params.slug);
+const page = Astro.props.page ?? await getDocsPageBySlug(Astro.params.slug);
 if (!page) throw new Error(`Unknown docs route: ${Astro.params.slug ?? ""}`);
 
 const entry = await getDocsEntry(page);

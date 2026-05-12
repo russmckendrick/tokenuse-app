@@ -37,11 +37,12 @@ const { latestVersion, releaseHref } = Astro.props;
   <div class="hero-foot">
     <div class="hero-foot-row">
       <div class="hero-foot-left">
-        <div class="hero-eyebrow">{latestVersion} - TUI + macOS desktop</div>
+        <div class="hero-eyebrow">{latestVersion} - TUI + desktop app</div>
         <h1 class="hero-h1">Track AI coding <span class="ink">token usage</span> and costs locally.</h1>
         <p class="hero-sub">
-          Token Use reads the Claude Code, Codex, Cursor, and GitHub Copilot sessions already on your machine,
-          stores them in a local archive, and shows usage by day, project, tool, model, shell command, or MCP server.
+          Token Use reads Claude Code, Codex, Cursor, GitHub Copilot, and Gemini history already on your
+          machine, stores it in a local archive, and adds local Insights plus optional quota gauges when you
+          choose to sync them.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="/docs/guides/installation/"><span class="btn-key">&gt;</span> Install Token Use</a>
@@ -51,7 +52,7 @@ const { latestVersion, releaseHref } = Astro.props;
           <span>No API keys</span>
           <span>Read-only ingestion</span>
           <span>No telemetry</span>
-          <span>Confirmed downloads only</span>
+          <span>Opt-in syncs only</span>
         </div>
       </div>
 
@@ -60,7 +61,7 @@ const { latestVersion, releaseHref } = Astro.props;
           <div class="callcard-strip"></div>
           <div class="callcard-label">CURRENT RELEASE</div>
           <div class="callcard-num">{latestVersion}</div>
-          <div class="callcard-sub">Homebrew, TUI binaries, and the macOS desktop app</div>
+          <div class="callcard-sub">Homebrew, TUI binaries, and desktop builds</div>
         </div>
       </div>
     </div>

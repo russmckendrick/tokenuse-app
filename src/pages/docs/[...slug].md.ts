@@ -17,7 +17,7 @@ interface Props {
 }
 
 export const GET = (async ({ params, props }) => {
-  const page = (props as Props).page ?? getDocsPageBySlug(params.slug);
+  const page = (props as Props).page ?? await getDocsPageBySlug(params.slug);
   if (!page) return new Response("Not found\n", { status: 404 });
 
   const markdown = await renderDocsPageMarkdown(page);
