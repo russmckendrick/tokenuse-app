@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import type { APIRoute } from "astro";
 import { markdownHeaders, renderDocsPageMarkdown } from "../../lib/agent-content";
 import { getAllDocsPages, getDocsPageBySlug, slugForDocsPage, type DocsPageMeta } from "../../lib/docs";

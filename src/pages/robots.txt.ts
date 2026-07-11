@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import type { APIRoute } from "astro";
 import { CONTENT_SIGNAL } from "../lib/agent-discovery";
 import { absoluteSiteUrl } from "../lib/seo";

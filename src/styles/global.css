@@ -1338,7 +1338,8 @@ kbd {
   line-height: 1.5;
 }
 
-.docs-mermaid {
+/* astro-mermaid emits <pre class="mermaid"> for ```mermaid fences */
+pre.mermaid {
   overflow-x: auto;
   margin: 24px 0 32px;
   padding: 18px;
@@ -1350,7 +1351,7 @@ kbd {
   box-shadow: var(--shadow-1);
 }
 
-.docs-mermaid svg {
+pre.mermaid svg {
   display: block;
   min-width: 680px;
   max-width: none !important;

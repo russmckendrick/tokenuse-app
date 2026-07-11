@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import type { APIRoute } from "astro";
 import { markdownHeaders, renderReleaseMarkdown } from "../../lib/agent-content";
 import { getReleases, type Release } from "../../lib/releases";

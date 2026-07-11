@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import type { APIRoute } from "astro";
 import sourceInfo from "../../.generated/tokenuse-docs/source.json";
 import { getAllDocsPages } from "../lib/docs";
