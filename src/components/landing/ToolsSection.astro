@@ -1,4 +1,5 @@
 ---
+import Sparkline from "./Sparkline.astro";
 import ToolMark from "./ToolMark.astro";
 
 const tools = [
@@ -6,64 +7,80 @@ const tools = [
     kind: "claude",
     name: "Claude Code",
     src: "~/.claude/projects/ + Claude Desktop",
-    lines: ["Exact tokens and cache reads", "Bash commands and tool calls", "MCP server and tool usage"]
+    lines: ["Exact tokens and cache reads", "Bash commands and tool calls", "MCP server and tool usage"],
+    accent: "var(--coral)",
+    spark: [3, 4, 4, 6, 5, 7, 8, 7, 9, 10, 9, 11, 12, 13]
   },
   {
     kind: "codex",
     name: "Codex",
     src: "~/.codex/sessions/**/rollout-*.jsonl",
-    lines: ["Per-turn token_count events", "Cached input plus reasoning output", "Tool call ledger"]
+    lines: ["Per-turn token_count events", "Cached input plus reasoning output", "Tool call ledger"],
+    accent: "var(--brass)",
+    spark: [2, 9, 3, 10, 2, 8, 4, 12, 3, 9, 5, 11, 4, 10]
   },
   {
     kind: "cursor",
     name: "Cursor",
     src: "Cursor state.vscdb",
-    lines: ["Exact tokens when present", "chars / 4 estimate fallback", "Agent KV rows"]
+    lines: ["Exact tokens when present", "chars / 4 estimate fallback", "Agent KV rows"],
+    accent: "var(--steel)",
+    spark: [3, 3, 3, 4, 3, 3, 4, 9, 10, 9, 10, 9, 10, 10]
   },
   {
     kind: "copilot",
     name: "GitHub Copilot",
-    src: "~/.copilot/session-state/ + VS Code Chat",
-    lines: ["Legacy output tokens", "VS Code Chat transcripts", "Estimated transcript usage"]
+    src: "~/.copilot/ SQLite stores + VS Code Chat",
+    lines: ["Exact CLI usage when recorded", "VS Code Chat transcript estimates", "AI Credits quota gauges"],
+    accent: "var(--green)",
+    spark: [2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12]
   },
   {
     kind: "gemini",
     name: "Gemini",
     src: "~/.gemini/tmp/<project_hash>/chats/",
-    lines: ["Exact usage and cache reads", "Thought token tracking", "Tool calls"]
+    lines: ["Exact usage and cache reads", "Thought token tracking", "Tool calls"],
+    accent: "var(--pink)",
+    spark: [2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 7, 7, 8]
   }
 ] as const;
 ---
 
-<section id="tools" class="section section-tools">
-  <div class="section-head">
-    <div class="section-eyebrow">SUPPORTED TOOLS</div>
-    <h2 class="section-h2">Five local parsers, one archive.</h2>
-    <p class="section-lede">
-      Token Use reads the session files your tools already write to disk. It normalizes local history into one
-      browsable archive, while limits-only quota sync for Copilot, Claude.ai, and ChatGPT (Codex) stays separate
-      and opt-in from Config.
-    </p>
-  </div>
+<section id="tools" class="band band-tools">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="section-eyebrow">SUPPORTED TOOLS</div>
+      <h2 class="section-h2">Five local parsers, one archive.</h2>
+      <p class="section-lede">
+        Token Use reads the session files your tools already write to disk. It normalizes local history into one
+        browsable archive, while limits-only quota sync for Copilot, Claude.ai, and ChatGPT (Codex) stays separate
+        and opt-in from Config.
+      </p>
+    </div>
 
-  <div class="tools-grid">
-    {tools.map((tool) => (
-      <article class="tool-card">
-        <div class="tool-card-plate">
-          <span class="tool-card-mark"><ToolMark kind={tool.kind} /></span>
-          <span class="tool-card-name">{tool.name}</span>
-        </div>
-        <div class="tool-card-body">
-          <div class="tool-card-src">{tool.src}</div>
-          <ul class="tool-card-list">
-            {tool.lines.map((line) => <li>{line}</li>)}
-          </ul>
-        </div>
-        <div class="tool-card-foot">
-          <span class="tool-card-status">live</span>
-          <a class="tool-card-calls" href="/docs/development/tools/">parser docs -&gt;</a>
-        </div>
-      </article>
-    ))}
+    <div class="tools-grid" data-reveal-group>
+      {tools.map((tool, i) => (
+        <article class="tool-card" data-reveal-child style={`--i: ${i}; --tool-accent: ${tool.accent};`}>
+          <div class="tool-card-stripe" aria-hidden="true"></div>
+          <div class="tool-card-plate">
+            <span class="tool-card-mark"><ToolMark kind={tool.kind} /></span>
+            <span class="tool-card-name">{tool.name}</span>
+          </div>
+          <div class="tool-card-body">
+            <div class="tool-card-src">{tool.src}</div>
+            <ul class="tool-card-list">
+              {tool.lines.map((line) => <li>{line}</li>)}
+            </ul>
+            <div class="tool-card-spark" aria-hidden="true">
+              <Sparkline values={[...tool.spark]} stroke={tool.accent} w={180} h={36} draw />
+            </div>
+          </div>
+          <div class="tool-card-foot">
+            <span class="tool-card-status">live</span>
+            <a class="tool-card-calls" href="/docs/development/tools/">parser docs -&gt;</a>
+          </div>
+        </article>
+      ))}
+    </div>
   </div>
 </section>

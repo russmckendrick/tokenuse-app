@@ -1,0 +1,11 @@
+---
+const bars = Array.from({ length: 48 }, (_, i) => {
+  const wave = Math.abs(Math.sin(i * 1.7)) * 0.55 + Math.abs(Math.sin(i * 0.43)) * 0.2;
+  const h = Math.min(1, 0.22 + wave + (i % 9 === 0 ? 0.18 : 0));
+  return h.toFixed(2);
+});
+---
+
+<div class="vu-divider" aria-hidden="true">
+  {bars.map((h, i) => <i style={`--h: ${h}; --i: ${i};`}></i>)}
+</div>

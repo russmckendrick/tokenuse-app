@@ -6,43 +6,57 @@ interface Props {
 const { latestVersion } = Astro.props;
 ---
 
-<section id="install" class="section section-install">
-  <div class="install-card">
-    <div class="install-head">
-      <div class="section-eyebrow on-dark">GET STARTED</div>
-      <h2 class="install-h2">Install the current release.</h2>
-      <p class="install-sub">Use Homebrew on macOS, or pull checksummed TUI and desktop builds from GitHub Releases for Linux and Windows.</p>
-    </div>
+<section id="install" class="band band-install">
+  <div class="smpte-strip" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <div class="container">
+    <div class="install-card" data-reveal>
+      <div class="install-head">
+        <div class="section-eyebrow on-dark">GET STARTED</div>
+        <h2 class="install-h2">Install the current release.</h2>
+        <p class="install-sub">Use Homebrew on macOS, or pull checksummed TUI and desktop builds from GitHub Releases for Linux and Windows.</p>
+      </div>
 
-    <div class="install-tabs" role="tablist" aria-label="Install commands">
-      <input checked type="radio" name="install-command" id="install-macos" />
-      <label class="install-tab" for="install-macos">macOS</label>
-      <input type="radio" name="install-command" id="install-linux" />
-      <label class="install-tab" for="install-linux">Linux</label>
-      <input type="radio" name="install-command" id="install-windows" />
-      <label class="install-tab" for="install-windows">Windows</label>
+      <div class="install-tabs" role="tablist" aria-label="Install commands">
+        <input checked type="radio" name="install-command" id="install-macos" />
+        <label class="install-tab" for="install-macos">macOS</label>
+        <input type="radio" name="install-command" id="install-linux" />
+        <label class="install-tab" for="install-linux">Linux</label>
+        <input type="radio" name="install-command" id="install-windows" />
+        <label class="install-tab" for="install-windows">Windows</label>
 
-      <div class="install-panels">
-        <pre class="install-cmd install-panel-macos"><span class="install-prompt">$</span> brew install russmckendrick/tap/tokenuse
+        <div class="install-panels">
+          <div class="install-panel install-panel-macos">
+            <button class="install-copy" type="button" aria-label="Copy macOS install commands">copy</button>
+            <pre class="install-cmd"><span class="install-prompt">$</span> brew install russmckendrick/tap/tokenuse
 <span class="install-prompt">$</span> tokenuse
 
 <span class="install-prompt">$</span> brew install --cask russmckendrick/tap/tokenuse-desktop
 <span class="install-prompt">$</span> open -a "Token Use"</pre>
-        <pre class="install-cmd install-panel-linux"><span class="install-prompt">$</span> curl -L -o tokenuse https://github.com/russmckendrick/tokenuse/releases/latest/download/tokenuse-linux-amd64
+          </div>
+          <div class="install-panel install-panel-linux">
+            <button class="install-copy" type="button" aria-label="Copy Linux install commands">copy</button>
+            <pre class="install-cmd"><span class="install-prompt">$</span> curl -L -o tokenuse https://github.com/russmckendrick/tokenuse/releases/latest/download/tokenuse-linux-amd64
 <span class="install-prompt">$</span> chmod +x tokenuse
 <span class="install-prompt">$</span> sudo install -m 0755 tokenuse /usr/local/bin/tokenuse
 <span class="install-prompt">$</span> tokenuse</pre>
-        <pre class="install-cmd install-panel-windows"><span class="install-prompt">PS&gt;</span> Invoke-WebRequest -Uri "https://github.com/russmckendrick/tokenuse/releases/latest/download/tokenuse-windows-amd64.exe" -OutFile "tokenuse.exe"
+          </div>
+          <div class="install-panel install-panel-windows">
+            <button class="install-copy" type="button" aria-label="Copy Windows install commands">copy</button>
+            <pre class="install-cmd"><span class="install-prompt">PS&gt;</span> Invoke-WebRequest -Uri "https://github.com/russmckendrick/tokenuse/releases/latest/download/tokenuse-windows-amd64.exe" -OutFile "tokenuse.exe"
 <span class="install-prompt">PS&gt;</span> .\tokenuse.exe</pre>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="install-foot">
-      <span>TUI: macOS - Linux - Windows</span>
-      <span>-</span>
-      <span>Desktop: macOS - Linux - Windows</span>
-      <span>-</span>
-      <span>{latestVersion}</span>
+      <div class="install-foot">
+        <span>TUI: macOS - Linux - Windows</span>
+        <span>-</span>
+        <span>Desktop: macOS - Linux - Windows</span>
+        <span>-</span>
+        <span>{latestVersion}</span>
+      </div>
     </div>
   </div>
 </section>

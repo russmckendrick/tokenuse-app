@@ -3,14 +3,20 @@ import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-zoom.css";
 import desktopOverview from "../assets/desktop/001.png";
-import desktopDeepDive from "../assets/desktop/002.png";
-import desktopUsage from "../assets/desktop/003.png";
-import desktopInsights from "../assets/desktop/004.png";
-import desktopConfig from "../assets/desktop/005.png";
+import desktopAnalytics from "../assets/desktop/002.png";
+import desktopTools from "../assets/desktop/003.png";
+import desktopModels from "../assets/desktop/004.png";
+import desktopProjects from "../assets/desktop/005.png";
+import desktopConfig from "../assets/desktop/006.png";
+import desktopToolClaude from "../assets/desktop/tool-claude-code.png";
+import desktopToolCursor from "../assets/desktop/tool-cursor.png";
+import desktopToolCodex from "../assets/desktop/tool-codex.png";
+import desktopToolCopilot from "../assets/desktop/tool-copilot.png";
+import desktopToolGemini from "../assets/desktop/tool-gemini.png";
 import tuiOverview from "../assets/tui/001.png";
 import tuiDeepDive from "../assets/tui/002.png";
 import tuiUsage from "../assets/tui/003.png";
-import tuiInsights from "../assets/tui/004.png";
+import tuiSession from "../assets/tui/004.png";
 import tuiConfig from "../assets/tui/005.png";
 
 interface Props {
@@ -19,42 +25,91 @@ interface Props {
 }
 
 const { variant = "landing", platform = "desktop" } = Astro.props;
+const isLanding = variant === "landing";
+// The landing TUI feed gets terminal-window chrome and the animated demo card.
+const isTuiLanding = isLanding && platform === "tui";
 
 const desktopShots = [
   {
     image: desktopOverview,
     platform: "Desktop",
     title: "Overview",
-    caption: "Dashboard, project spend, model mix, commands, and MCP activity.",
-    alt: "Token Use desktop app overview showing cost, calls, sessions, cache hit, input and output tokens, activity charts, project spend, model spend, shell commands, and MCP servers.",
+    caption: "KPI tiles, grouped limit gauges, activity, top projects, and top models.",
+    alt: "Token Use desktop app Overview screen showing cost, calls, sessions, cache hit rate, input and output totals, current limits grouped by tool, an activity chart, and top project and top model tables.",
   },
   {
-    image: desktopDeepDive,
+    image: desktopAnalytics,
     platform: "Desktop",
-    title: "Deep Dive",
-    caption: "Trends, project drill-downs, top sessions, and cost tables.",
-    alt: "Token Use desktop app deep dive screen showing activity trends, by-project spend, top sessions, project spend by tool, model efficiency, shell commands, and MCP servers.",
+    title: "Analytics",
+    caption: "Daily tool composition, activity heatmap, shares, cache efficiency, and ranked tables.",
+    alt: "Token Use desktop app Analytics screen showing spend over time, daily spend stacked by tool, an hour-by-weekday activity heatmap, provider and tool share donuts, cache efficiency, and ranked usage tables.",
   },
   {
-    image: desktopUsage,
+    image: desktopTools,
     platform: "Desktop",
-    title: "Usage",
-    caption: "Quota status and model usage beside local activity.",
-    alt: "Token Use desktop app usage screen showing Claude Code, Codex, Gemini, Cursor, and Copilot console usage panels with pulse charts, costs, calls, tokens, and quota rows.",
+    title: "Tools",
+    caption: "Rolling 24-hour consoles for every supported tool, plus dedicated tool pages.",
+    alt: "Token Use desktop app Tools screen showing rolling 24-hour consoles for Claude Code, Codex, Copilot, Cursor, and Gemini with cost, calls, tokens, plan-limit gauges, and top models.",
   },
   {
-    image: desktopInsights,
+    image: desktopModels,
     platform: "Desktop",
-    title: "Insights",
-    caption: "Signals, risks, weekly savings, and review actions.",
-    alt: "Token Use desktop app insights dashboard showing current read status, estimated weekly savings, risk and warning counts, top actions, signal map, and latest issue.",
+    title: "Models",
+    caption: "Provider-grouped catalog with all five time ranges side by side.",
+    alt: "Token Use desktop app Models screen showing a provider-grouped model catalog with 24 hours, 7 days, 30 days, this month, and all time columns and an expandable per-tool breakdown.",
+  },
+  {
+    image: desktopProjects,
+    platform: "Desktop",
+    title: "Projects",
+    caption: "Project to session to call drill-down with full call detail.",
+    alt: "Token Use desktop app Projects screen showing a project list with session rows and call detail including timestamp, prompt, model, token buckets, and cache rates.",
   },
   {
     image: desktopConfig,
     platform: "Desktop",
     title: "Config",
-    caption: "Currency, pricing books, integrations, local data, and desktop settings.",
-    alt: "Token Use desktop app config screen showing money and data, tool integrations, advice engine, local data, and desktop settings.",
+    caption: "Currency, pricing books, limit sync, sample data, and desktop behavior.",
+    alt: "Token Use desktop app Config screen showing display currency, pricing and exchange-rate downloads, archive actions, limit sync, the sample data switch, and desktop settings.",
+  },
+];
+
+// Dedicated per-tool pages — shown on the docs desktop gallery only.
+const desktopToolShots = [
+  {
+    image: desktopToolClaude,
+    platform: "Desktop",
+    title: "Claude Code",
+    caption: "The dedicated Claude Code page: 24-hour console, model windows, top projects, and sessions.",
+    alt: "Token Use desktop app Claude Code page showing the 24-hour console with per-model windows, plus top projects, top models, and top sessions.",
+  },
+  {
+    image: desktopToolCursor,
+    platform: "Desktop",
+    title: "Cursor",
+    caption: "Cursor's console with per-model usage beside its projects and sessions.",
+    alt: "Token Use desktop app Cursor page showing the 24-hour console with model usage, top projects, top models, and top sessions.",
+  },
+  {
+    image: desktopToolCodex,
+    platform: "Desktop",
+    title: "Codex",
+    caption: "Codex with plan limits, Spark model windows, and reset times.",
+    alt: "Token Use desktop app Codex page showing plan-limit gauges for five-hour and weekly windows, Spark model windows, model usage, top projects, and sessions.",
+  },
+  {
+    image: desktopToolCopilot,
+    platform: "Desktop",
+    title: "GitHub Copilot",
+    caption: "Copilot with AI Credits used, remaining allowance, and reset time.",
+    alt: "Token Use desktop app Copilot page showing the AI Credits monthly gauge with used and remaining credits, model usage, top projects, and sessions.",
+  },
+  {
+    image: desktopToolGemini,
+    platform: "Desktop",
+    title: "Gemini",
+    caption: "Gemini's console with per-model usage across the selected range.",
+    alt: "Token Use desktop app Gemini page showing the 24-hour console with Gemini 2.5 Pro and Flash usage, top projects, top models, and top sessions.",
   },
 ];
 
@@ -63,36 +118,36 @@ const tuiShots = [
     image: tuiOverview,
     platform: "TUI",
     title: "Overview",
-    caption: "The same reporting shape in a keyboard-first layout.",
-    alt: "Token Use TUI overview showing cost, calls, sessions, cache hit, input and output tokens, activity pulse, project spend, model efficiency, shell commands, and MCP servers.",
+    caption: "The everyday summary in a keyboard-first layout.",
+    alt: "Token Use TUI overview showing cost, calls, sessions, cache hit, input and output tokens, activity pulse, project spend, model spend, shell commands, and MCP servers.",
   },
   {
     image: tuiDeepDive,
     platform: "TUI",
     title: "Deep Dive",
-    caption: "Trend, project, session, model, command, and server panels.",
+    caption: "Ranked projects, sessions, models, tools, commands, and MCP servers.",
     alt: "Token Use TUI deep dive screen showing activity trend, by-project spend, top sessions, project spend by tool, model efficiency, shell commands, and MCP servers.",
   },
   {
     image: tuiUsage,
     platform: "TUI",
     title: "Usage",
-    caption: "Quota status, pulse bars, model rows, calls, tokens, and reset times.",
+    caption: "Rolling 24-hour tool consoles with plan-limit gauges and reset times.",
     alt: "Token Use TUI usage screen showing Claude Code, Codex, Gemini, Cursor, and Copilot console usage panels with pulse charts, costs, calls, tokens, quota reset times, and plan names.",
   },
   {
-    image: tuiInsights,
+    image: tuiSession,
     platform: "TUI",
-    title: "Insights",
-    caption: "Savings, risk counts, advice, evidence, and shortcuts.",
-    alt: "Token Use TUI insights screen showing estimated weekly savings, risks, warnings, info, advice text, warnings, evidence, and keyboard shortcuts.",
+    title: "Session",
+    caption: "Pick a session, then drill into its calls and prompts.",
+    alt: "Token Use TUI session picker open over Deep Dive, listing recent sessions by date, project, cost, and calls with a type-to-search filter.",
   },
   {
     image: tuiConfig,
     platform: "TUI",
     title: "Config",
-    caption: "Local files, pricing sources, limits, and cleanup actions.",
-    alt: "Token Use TUI configuration screen showing currency override, exchange rates, pricing books, tool integrations, advice tool, local files, pricing sources, and keyboard shortcuts.",
+    caption: "Currency, pricing sources, limit sidecars, quota sync, and cleanup.",
+    alt: "Token Use TUI configuration screen showing currency override, exchange rates, pricing books, limit sidecars, subscription quota sync, local files, and keyboard shortcuts.",
   },
 ];
 
@@ -101,20 +156,23 @@ const gallery = platform === "tui"
       id: "tui",
       eyebrow: "TUI gallery",
       title: "Terminal UI screens.",
-      note: "Five keyboard-first views",
+      note: "Three tabs plus session and config",
       shots: tuiShots,
     }
   : {
       id: "desktop",
       eyebrow: "Desktop gallery",
       title: "Desktop app screens.",
-      note: "Five native app views",
-      shots: desktopShots,
+      note: isLanding ? "Six sidebar screens" : "Six sidebar screens plus five tool pages",
+      shots: isLanding ? desktopShots : [...desktopShots, ...desktopToolShots],
     };
 ---
 
-<section class:list={["screenshot-gallery", `screenshot-gallery-${variant}`]} aria-labelledby={`screenshot-gallery-title-${variant}-${gallery.id}`}>
-  <header class="screenshot-gallery-top">
+<section
+  class:list={["screenshot-gallery", `screenshot-gallery-${variant}`, `screenshot-gallery-${platform}`]}
+  aria-labelledby={`screenshot-gallery-title-${variant}-${gallery.id}`}
+>
+  <header class="screenshot-gallery-top" {...(isLanding ? { "data-reveal": true } : {})}>
     <div>
       <p class="screenshot-gallery-eyebrow">{gallery.eyebrow}</p>
       <h3 id={`screenshot-gallery-title-${variant}-${gallery.id}`}>{gallery.title}</h3>
@@ -122,7 +180,7 @@ const gallery = platform === "tui"
     <p class="screenshot-gallery-count">{gallery.note}</p>
   </header>
 
-  <div class="screenshot-gallery-grid" data-lightgallery>
+  <div class="screenshot-gallery-grid" data-lightgallery {...(isLanding ? { "data-reveal-group": true } : {})}>
     {gallery.shots.map((shot, index) => (
       <a
         class="screenshot-gallery-link"
@@ -131,9 +189,16 @@ const gallery = platform === "tui"
         data-lg-size={`${shot.image.width}-${shot.image.height}`}
         data-sub-html={`<strong>${shot.platform} / ${shot.title}</strong><span>${shot.caption}</span>`}
         data-thumb={shot.image.src}
-        style={`--shot-index: ${index};`}
+        style={`--shot-index: ${index}; --i: ${index};`}
         aria-label={`Open ${shot.platform} ${shot.title} screenshot`}
+        {...(isLanding ? { "data-reveal-child": true } : {})}
       >
+        {isTuiLanding && (
+          <span class="tui-card-bar" aria-hidden="true">
+            <span class="tui-card-dots"><i></i><i></i><i></i></span>
+            <span class="tui-card-title">{shot.title}</span>
+          </span>
+        )}
         <span class="screenshot-gallery-media">
           <img
             src={shot.image.src}

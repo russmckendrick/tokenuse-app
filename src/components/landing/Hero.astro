@@ -1,6 +1,6 @@
 ---
-import wideHero from "../../assets/hero-wide.png";
-import tallHero from "../../assets/hero-tall.png";
+import widePoster from "../../assets/hero-poster-wide.jpg";
+import tallPoster from "../../assets/hero-poster-tall.jpg";
 
 interface Props {
   latestVersion: string;
@@ -10,60 +10,65 @@ interface Props {
 const { latestVersion, releaseHref } = Astro.props;
 ---
 
+<link rel="preload" as="image" href={widePoster.src} media="(min-width: 761px)" fetchpriority="high" />
+<link rel="preload" as="image" href={tallPoster.src} media="(max-width: 760px)" fetchpriority="high" />
+
 <header id="top" class="hero">
-  <div class="hero-image-wrap">
-    <video class="hero-image hero-video hero-video-wide" autoplay muted loop playsinline poster={wideHero.src}>
-      <source src="/vids/hero-wide.mp4" type="video/mp4" />
-    </video>
-    <video class="hero-image hero-video hero-video-tall" autoplay muted loop playsinline poster={tallHero.src}>
-      <source src="/vids/hero-tall.mp4" type="video/mp4" />
-    </video>
+  <div class="hero-media" aria-hidden="true">
+    <video
+      class="hero-video hero-video-wide"
+      data-hero-video="wide"
+      data-video-src="/vids/hero-wide.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="none"
+      poster={widePoster.src}
+    ></video>
+    <video
+      class="hero-video hero-video-tall"
+      data-hero-video="tall"
+      data-video-src="/vids/hero-tall.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="none"
+      poster={tallPoster.src}
+    ></video>
     <picture class="hero-image-static">
-      <source media="(max-width: 760px)" srcset={tallHero.src} width={tallHero.width} height={tallHero.height} />
+      <source media="(max-width: 760px)" srcset={tallPoster.src} width={tallPoster.width} height={tallPoster.height} />
       <img
-        class="hero-image"
-        src={wideHero.src}
-        width={wideHero.width}
-        height={wideHero.height}
-        alt="A broadcast studio set for token use, with operators and panels for AI coding tools."
+        src={widePoster.src}
+        width={widePoster.width}
+        height={widePoster.height}
+        alt=""
         fetchpriority="high"
         decoding="async"
       />
     </picture>
+    <div class="hero-scrim"></div>
     <div class="hero-vignette"></div>
-    <div class="scanlines" aria-hidden="true"></div>
+    <div class="scanlines"></div>
   </div>
 
-  <div class="hero-foot">
-    <div class="hero-foot-row">
-      <div class="hero-foot-left">
-        <div class="hero-eyebrow">{latestVersion} - TUI + desktop app</div>
-        <h1 class="hero-h1">Track AI coding <span class="ink">token usage</span> and costs locally.</h1>
-        <p class="hero-sub">
-          Token Use reads Claude Code, Codex, Cursor, GitHub Copilot, and Gemini history already on your
-          machine, stores it in a local archive, and adds local Insights plus optional quota gauges when you
-          choose to sync them.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="/docs/guides/installation/"><span class="btn-key">&gt;</span> Install Token Use</a>
-          <a class="btn btn-ghost" href={releaseHref}>Latest release <span aria-hidden="true">-&gt;</span></a>
-        </div>
-        <div class="hero-meta">
-          <span>No API keys</span>
-          <span>Read-only ingestion</span>
-          <span>No telemetry</span>
-          <span>Opt-in syncs only</span>
-        </div>
-      </div>
-
-      <div class="hero-foot-right">
-        <div class="callcard">
-          <div class="callcard-strip"></div>
-          <div class="callcard-label">CURRENT RELEASE</div>
-          <div class="callcard-num">{latestVersion}</div>
-          <div class="callcard-sub">Homebrew, TUI binaries, and desktop builds</div>
-        </div>
+  <div class="hero-lower-third">
+    <div class="hero-lt-left">
+      <div class="hero-eyebrow">{latestVersion} - TUI + desktop app</div>
+      <h1 class="hero-h1">Track AI coding <span class="ink">token usage</span> and costs locally.</h1>
+      <p class="hero-sub">
+        Token Use reads Claude Code, Codex, Cursor, GitHub Copilot, and Gemini history already on your
+        machine, stores it in a local archive, and breaks it down by cost, model, project, and tool, with
+        optional quota gauges when you choose to sync them.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/docs/guides/installation/"><span class="btn-key">&gt;</span> Install Token Use</a>
+        <a class="btn btn-ghost" href={releaseHref}>Latest release <span aria-hidden="true">-&gt;</span></a>
       </div>
     </div>
   </div>
+
+  <div class="hero-scroll-cue" aria-hidden="true"><i></i></div>
+  <div class="nav-sentinel" data-nav-sentinel aria-hidden="true"></div>
 </header>
