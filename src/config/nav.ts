@@ -105,7 +105,7 @@ export const footerGroups: FooterGroup[] = [
       { label: "Installation",    href: "/docs/guides/installation/",         icon: { paths: icons.download } },
       { label: "TUI usage",       href: "/docs/guides/tui-usage/",            icon: { paths: icons.terminal } },
       { label: "Desktop app",     href: "/docs/guides/desktop-usage/",        icon: { paths: icons.desktop } },
-      { label: "Insights",        href: "/docs/guides/insights/",             icon: { paths: icons.grid } },
+      { label: "Model registry",  href: "/docs/development/models/",          icon: { paths: icons.grid } },
       { label: "Architecture",    href: "/docs/development/architecture/",    icon: { paths: icons.layers } },
       { label: "Pricing",         href: "/docs/development/pricing/",         icon: { paths: icons.scale } },
       { label: "Tool parsers",    href: "/docs/development/tools/",           icon: { paths: icons.wrench } },
@@ -136,11 +136,11 @@ export const docsNavIcons: Record<string, NavIconDef> = {
   "guides/installation":            { paths: icons.download },
   "guides/tui-usage":               { paths: icons.terminal },
   "guides/desktop-usage":           { paths: icons.desktop },
-  "guides/insights":                { paths: icons.grid },
 
   // Development section
   "development":                    { paths: icons.folder },
   "development/architecture":       { paths: icons.layers },
+  "development/models":             { paths: icons.grid },
   "development/pricing":            { paths: icons.scale },
   "development/local-development":  { paths: icons.wrench },
   "development/source-control":     { paths: icons.arrows },

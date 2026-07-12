@@ -45,21 +45,14 @@ const DOC_META: Record<string, DocsPageOverride> = {
     eyebrow: "Guides",
     group: "Guides",
     order: 20,
-    description: "Navigate the dashboard, filters, keyboard shortcuts, config, session drill-down, reports, and Usage.",
+    description: "Navigate Overview, Deep Dive, and Usage plus filters, keyboard shortcuts, session drill-down, and reports.",
   },
   "guides/desktop-usage": {
     navLabel: "Desktop app usage",
     eyebrow: "Guides",
     group: "Guides",
     order: 30,
-    description: "Use the Tauri desktop app for local refresh, filtering, config, Insights, reports, and export.",
-  },
-  "guides/insights": {
-    navLabel: "Insights",
-    eyebrow: "Guides",
-    group: "Guides",
-    order: 40,
-    description: "Use local Signals and optional manual advice to spot model, cache, anomaly, and quota patterns.",
+    description: "Use the desktop app's Overview, Analytics, Tools, Models, Projects, and Config screens plus tray Quick View.",
   },
   development: {
     navLabel: "Overview",
@@ -74,6 +67,13 @@ const DOC_META: Record<string, DocsPageOverride> = {
     group: "Development",
     order: 110,
     description: "Follow the local archive, ingestion, aggregation, pricing, export, and frontend data flow.",
+  },
+  "development/models": {
+    navLabel: "Model registry",
+    eyebrow: "Development",
+    group: "Development",
+    order: 115,
+    description: "How raw model ids from tool logs resolve to canonical models with provider and family metadata.",
   },
   "development/pricing": {
     navLabel: "Pricing",
@@ -341,7 +341,7 @@ export const overviewCardIds = [
   "guides/installation",
   "guides/tui-usage",
   "guides/desktop-usage",
-  "guides/insights",
+  "development/models",
   "development",
   "development/tools",
 ] as const;
