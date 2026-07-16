@@ -52,7 +52,7 @@ const DOC_META: Record<string, DocsPageOverride> = {
     eyebrow: "Guides",
     group: "Guides",
     order: 30,
-    description: "Use the desktop app's Overview, Analytics, Tools, Models, Projects, and Config screens plus tray Quick View.",
+    description: "Use the desktop app's Overview, Analytics, Coach, Tools, Models, Projects, and Config screens plus tray Quick View.",
   },
   development: {
     navLabel: "Overview",
@@ -67,6 +67,13 @@ const DOC_META: Record<string, DocsPageOverride> = {
     group: "Development",
     order: 110,
     description: "Follow the local archive, ingestion, aggregation, pricing, export, and frontend data flow.",
+  },
+  "development/coach": {
+    navLabel: "Coach engine",
+    eyebrow: "Development",
+    group: "Development",
+    order: 112,
+    description: "How the desktop Coach page grades practice: the 27-rule catalog, scoring, and the flow, pace, timeline, and output analyzers.",
   },
   "development/models": {
     navLabel: "Model registry",

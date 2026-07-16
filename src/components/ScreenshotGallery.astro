@@ -8,6 +8,7 @@ import desktopTools from "../assets/desktop/003.png";
 import desktopModels from "../assets/desktop/004.png";
 import desktopProjects from "../assets/desktop/005.png";
 import desktopConfig from "../assets/desktop/006.png";
+import desktopCoach from "../assets/desktop/007.png";
 import desktopToolClaude from "../assets/desktop/tool-claude-code.png";
 import desktopToolCursor from "../assets/desktop/tool-cursor.png";
 import desktopToolCodex from "../assets/desktop/tool-codex.png";
@@ -45,6 +46,13 @@ const desktopShots = [
     alt: "Token Use desktop app Analytics screen showing spend over time, daily spend stacked by tool, an hour-by-weekday activity heatmap, provider and tool share donuts, cache efficiency, and ranked usage tables.",
   },
   {
+    image: desktopCoach,
+    platform: "Desktop",
+    title: "Coach",
+    caption: "Report-card grade, per-group practice scores, priority findings, flow, and pace.",
+    alt: "Token Use desktop app Coach screen showing an overall B+ grade, rules clean and findings tiles, prompt quality, session hygiene, code review, and tool mastery scores with trend sparklines, priority findings, and flow and pace panels.",
+  },
+  {
     image: desktopTools,
     platform: "Desktop",
     title: "Tools",
@@ -74,7 +82,7 @@ const desktopShots = [
   },
 ];
 
-// Dedicated per-tool pages — shown on the docs desktop gallery only.
+// Dedicated per-tool pages — appended after the sidebar screens on both galleries.
 const desktopToolShots = [
   {
     image: desktopToolClaude,
@@ -163,8 +171,8 @@ const gallery = platform === "tui"
       id: "desktop",
       eyebrow: "Desktop gallery",
       title: "Desktop app screens.",
-      note: isLanding ? "Six sidebar screens" : "Six sidebar screens plus five tool pages",
-      shots: isLanding ? desktopShots : [...desktopShots, ...desktopToolShots],
+      note: "Seven sidebar screens plus five tool pages",
+      shots: [...desktopShots, ...desktopToolShots],
     };
 ---
 
