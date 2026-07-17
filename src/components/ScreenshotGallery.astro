@@ -9,6 +9,9 @@ import desktopModels from "../assets/desktop/004.png";
 import desktopProjects from "../assets/desktop/005.png";
 import desktopConfig from "../assets/desktop/006.png";
 import desktopCoach from "../assets/desktop/007.png";
+import desktopScrollback from "../assets/desktop/008.png";
+import desktopMcp from "../assets/desktop/009.png";
+import desktopProjectDetail from "../assets/desktop/010.png";
 import desktopToolClaude from "../assets/desktop/tool-claude-code.png";
 import desktopToolCursor from "../assets/desktop/tool-cursor.png";
 import desktopToolCodex from "../assets/desktop/tool-codex.png";
@@ -19,6 +22,8 @@ import tuiDeepDive from "../assets/tui/002.png";
 import tuiUsage from "../assets/tui/003.png";
 import tuiSession from "../assets/tui/004.png";
 import tuiConfig from "../assets/tui/005.png";
+import tuiCoach from "../assets/tui/006.png";
+import tuiScrollback from "../assets/tui/007.png";
 
 interface Props {
   variant?: "landing" | "docs";
@@ -53,6 +58,13 @@ const desktopShots = [
     alt: "Token Use desktop app Coach screen showing an overall B+ grade, rules clean and findings tiles, prompt quality, session hygiene, code review, and tool mastery scores with trend sparklines, priority findings, and flow and pace panels.",
   },
   {
+    image: desktopScrollback,
+    platform: "Desktop",
+    title: "Scrollback",
+    caption: "Full-text search across every archived transcript, grouped by session.",
+    alt: "Token Use desktop app Scrollback screen showing a search query with per-session grouped results, role-tagged and term-highlighted snippets, and match counts, filtered by tool and project.",
+  },
+  {
     image: desktopTools,
     platform: "Desktop",
     title: "Tools",
@@ -70,15 +82,29 @@ const desktopShots = [
     image: desktopProjects,
     platform: "Desktop",
     title: "Projects",
-    caption: "Project to session to call drill-down with full call detail.",
-    alt: "Token Use desktop app Projects screen showing a project list with session rows and call detail including timestamp, prompt, model, token buckets, and cache rates.",
+    caption: "Uncapped project index — cost, avg per session, sessions, calls, and tool mix per row.",
+    alt: "Token Use desktop app Projects screen showing a full project index with cost, average per session, sessions, calls, last active, and tool mix for every project in the period.",
+  },
+  {
+    image: desktopProjectDetail,
+    platform: "Desktop",
+    title: "Project detail",
+    caption: "A single project's KPIs, tool split, By Activity, sessions, and discovered sources.",
+    alt: "Token Use desktop app project detail page showing KPI tiles for cost, calls, sessions, cache hit, and AI code output, an activity pulse, a per-tool split donut, top models, By Activity task categories, and the full session list.",
   },
   {
     image: desktopConfig,
     platform: "Desktop",
     title: "Config",
-    caption: "Currency, pricing books, limit sync, sample data, and desktop behavior.",
-    alt: "Token Use desktop app Config screen showing display currency, pricing and exchange-rate downloads, archive actions, limit sync, the sample data switch, and desktop settings.",
+    caption: "Currency, pricing books, limit sync, Data Sources diagnostics, and desktop behavior.",
+    alt: "Token Use desktop app Config screen showing display currency, pricing and exchange-rate downloads, archive actions, limit sync, the Data Sources diagnostics panel, the sample data switch, and desktop settings.",
+  },
+  {
+    image: desktopMcp,
+    platform: "Desktop",
+    title: "MCP Server",
+    caption: "Opt-in loopback HTTP endpoint with a bearer token and a copyable claude mcp add command.",
+    alt: "Token Use desktop app Config MCP Server panel showing the enable toggle, the loopback endpoint and port, a masked bearer token with reveal and copy buttons, and a copyable claude mcp add command.",
   },
 ];
 
@@ -144,6 +170,20 @@ const tuiShots = [
     alt: "Token Use TUI usage screen showing Claude Code, Codex, Gemini, Cursor, and Copilot console usage panels with pulse charts, costs, calls, tokens, quota reset times, and plan names.",
   },
   {
+    image: tuiCoach,
+    platform: "TUI",
+    title: "Coach",
+    caption: "Overall grade, per-group scores, findings, and the advisory Setup panel.",
+    alt: "Token Use TUI Coach screen showing an overall practice grade, per-group scores, triggered findings with occurrence lines, and an advisory setup panel.",
+  },
+  {
+    image: tuiScrollback,
+    platform: "TUI",
+    title: "Scrollback",
+    caption: "Type a phrase, press Enter — grouped, term-highlighted transcript matches.",
+    alt: "Token Use TUI Scrollback screen showing a search input with per-session grouped results, role-tagged and term-highlighted snippets, and match counts.",
+  },
+  {
     image: tuiSession,
     platform: "TUI",
     title: "Session",
@@ -164,14 +204,14 @@ const gallery = platform === "tui"
       id: "tui",
       eyebrow: "TUI gallery",
       title: "Terminal UI screens.",
-      note: "Three tabs plus session and config",
+      note: "Five tabs plus session and config",
       shots: tuiShots,
     }
   : {
       id: "desktop",
       eyebrow: "Desktop gallery",
       title: "Desktop app screens.",
-      note: "Seven sidebar screens plus five tool pages",
+      note: "Eight sidebar screens, project and MCP detail, and five tool pages",
       shots: [...desktopShots, ...desktopToolShots],
     };
 ---

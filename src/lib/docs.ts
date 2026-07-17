@@ -45,14 +45,14 @@ const DOC_META: Record<string, DocsPageOverride> = {
     eyebrow: "Guides",
     group: "Guides",
     order: 20,
-    description: "Navigate Overview, Deep Dive, and Usage plus filters, keyboard shortcuts, session drill-down, and reports.",
+    description: "Navigate Overview, Deep Dive, Usage, Coach, and Scrollback plus filters, keyboard shortcuts, session drill-down, and reports.",
   },
   "guides/desktop-usage": {
     navLabel: "Desktop app usage",
     eyebrow: "Guides",
     group: "Guides",
     order: 30,
-    description: "Use the desktop app's Overview, Analytics, Coach, Tools, Models, Projects, and Config screens plus tray Quick View.",
+    description: "Use the desktop app's Overview, Analytics, Coach, Scrollback, Tools, Models, Projects, and Config screens plus tray Quick View.",
   },
   development: {
     navLabel: "Overview",
@@ -67,6 +67,13 @@ const DOC_META: Record<string, DocsPageOverride> = {
     group: "Development",
     order: 110,
     description: "Follow the local archive, ingestion, aggregation, pricing, export, and frontend data flow.",
+  },
+  "development/mcp-server": {
+    navLabel: "MCP server",
+    eyebrow: "Development",
+    group: "Development",
+    order: 111,
+    description: "The read-only MCP server: stdio and loopback HTTP transports, the status/overview/projects/scrollback tools, the HTTP security model, and desktop hosting.",
   },
   "development/coach": {
     navLabel: "Coach engine",
