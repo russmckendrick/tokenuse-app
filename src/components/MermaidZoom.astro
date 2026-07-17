@@ -1,0 +1,400 @@
+---
+// Enhances astro-mermaid diagrams (`pre.mermaid`) with a click-to-open
+// lightbox that supports wheel/pinch zoom and drag-to-pan. Rendered once per
+// docs page; the script is idempotent and re-scans after Astro view
+// transitions and after mermaid finishes its async render.
+---
+
+<div
+  class="mermaid-zoom-overlay"
+  id="mermaid-zoom-overlay"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Diagram viewer"
+  hidden
+>
+  <div class="mzo-toolbar" role="toolbar" aria-label="Diagram controls">
+    <button type="button" class="mzo-btn" data-mzo-action="zoom-out" aria-label="Zoom out" title="Zoom out">&#8722;</button>
+    <button type="button" class="mzo-btn" data-mzo-action="reset" aria-label="Reset view" title="Reset view">Reset</button>
+    <button type="button" class="mzo-btn" data-mzo-action="zoom-in" aria-label="Zoom in" title="Zoom in">&#43;</button>
+    <button type="button" class="mzo-btn mzo-close" data-mzo-action="close" aria-label="Close diagram viewer" title="Close (Esc)">&#10005;</button>
+  </div>
+  <div class="mzo-stage" id="mermaid-zoom-stage">
+    <div class="mzo-content" id="mermaid-zoom-content"></div>
+  </div>
+  <p class="mzo-hint">Scroll or pinch to zoom &middot; drag to pan &middot; Esc to close</p>
+</div>
+
+<style is:global>
+  pre.mermaid[data-processed] {
+    cursor: zoom-in;
+  }
+
+  .mermaid-zoom-trigger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    font: 600 12px/1 var(--sans);
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    background: color-mix(in oklab, var(--panel) 82%, transparent);
+    border: 1px solid var(--line-2);
+    border-radius: 6px;
+    cursor: zoom-in;
+    opacity: 0;
+    transition: opacity 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+    backdrop-filter: blur(4px);
+  }
+
+  pre.mermaid:hover .mermaid-zoom-trigger,
+  pre.mermaid:focus-within .mermaid-zoom-trigger,
+  .mermaid-zoom-trigger:focus-visible {
+    opacity: 1;
+  }
+
+  .mermaid-zoom-trigger:hover {
+    color: var(--brass);
+    border-color: var(--brass-3);
+  }
+
+  @media (hover: none) {
+    .mermaid-zoom-trigger {
+      opacity: 1;
+    }
+  }
+
+  .mermaid-zoom-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    background: color-mix(in oklab, var(--bg) 92%, #000);
+    backdrop-filter: blur(6px);
+    animation: mzo-fade 0.16s ease both;
+  }
+
+  .mermaid-zoom-overlay[hidden] {
+    display: none;
+  }
+
+  @keyframes mzo-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .mzo-toolbar {
+    position: absolute;
+    top: max(16px, env(safe-area-inset-top));
+    right: max(16px, env(safe-area-inset-right));
+    z-index: 2;
+    display: flex;
+    gap: 8px;
+  }
+
+  .mzo-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 12px;
+    font: 600 15px/1 var(--sans);
+    color: var(--ink);
+    background: color-mix(in oklab, var(--panel) 90%, transparent);
+    border: 1px solid var(--line-2);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: var(--shadow-1);
+    transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+  }
+
+  .mzo-btn:hover {
+    color: var(--brass);
+    border-color: var(--brass-3);
+    background: var(--panel-2);
+  }
+
+  .mzo-btn:focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 2px;
+  }
+
+  .mzo-close {
+    font-size: 16px;
+  }
+
+  .mzo-stage {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    touch-action: none;
+    cursor: grab;
+  }
+
+  .mzo-stage.is-panning {
+    cursor: grabbing;
+  }
+
+  .mzo-content {
+    transform-origin: 0 0;
+    will-change: transform;
+  }
+
+  .mzo-content svg {
+    display: block;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+
+  .mzo-hint {
+    position: absolute;
+    left: 50%;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 7px 14px;
+    font: 500 12px/1 var(--sans);
+    color: var(--ink-dim);
+    background: color-mix(in oklab, var(--panel) 80%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+</style>
+
+<script>
+  type Point = { x: number; y: number };
+
+  const MIN_SCALE = 0.2;
+  const MAX_SCALE = 12;
+
+  const overlay = document.getElementById("mermaid-zoom-overlay");
+  const stage = document.getElementById("mermaid-zoom-stage");
+  const content = document.getElementById("mermaid-zoom-content");
+
+  if (overlay && stage && content) {
+    let scale = 1;
+    let tx = 0;
+    let ty = 0;
+    let lastTrigger: HTMLElement | null = null;
+    let cloneSeq = 0;
+    const pointers = new Map<number, Point>();
+    let pinchDist = 0;
+    let pinchMid: Point = { x: 0, y: 0 };
+
+    const clamp = (value: number, min: number, max: number) =>
+      Math.min(max, Math.max(min, value));
+
+    const apply = () => {
+      content.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+    };
+
+    const openWith = (svg: SVGElement, trigger: HTMLElement) => {
+      lastTrigger = trigger;
+
+      // Mermaid scopes its CSS and defs (markers, gradients) to the root svg id,
+      // e.g. `#mermaid-abc .node rect { fill: … }` and `url(#mermaid-abc_arrow)`.
+      // Re-id the clone with a fresh, unique base so those scoped rules keep
+      // matching — a plain string swap covers both definitions and references
+      // without leaving duplicate ids in the document.
+      const oldId = svg.getAttribute("id");
+      const newId = `mzoom-clone-${++cloneSeq}`;
+      let markup = svg.outerHTML;
+      if (oldId) markup = markup.split(oldId).join(newId);
+      content.innerHTML = markup;
+      const clone = content.querySelector("svg");
+      if (!clone) return;
+      clone.removeAttribute("style");
+
+      // Freeze the diagram's rendered pixel size so transforms are predictable.
+      const rect = svg.getBoundingClientRect();
+      const natW = rect.width || 680;
+      const natH = rect.height || 420;
+      clone.setAttribute("width", String(natW));
+      clone.setAttribute("height", String(natH));
+      overlay.hidden = false;
+      document.documentElement.style.overflow = "hidden";
+
+      // Fit-to-stage: contain with a small margin, then centre.
+      const stageRect = stage.getBoundingClientRect();
+      const fit = Math.min(stageRect.width / natW, stageRect.height / natH) * 0.92;
+      scale = clamp(fit, MIN_SCALE, MAX_SCALE);
+      tx = (stageRect.width - natW * scale) / 2;
+      ty = (stageRect.height - natH * scale) / 2;
+      apply();
+
+      const closeBtn = overlay.querySelector<HTMLElement>('[data-mzo-action="close"]');
+      closeBtn?.focus();
+    };
+
+    const close = () => {
+      overlay.hidden = true;
+      content.replaceChildren();
+      document.documentElement.style.overflow = "";
+      pointers.clear();
+      lastTrigger?.focus();
+    };
+
+    // Zoom toward a stage-relative anchor point.
+    const zoomAt = (anchor: Point, factor: number) => {
+      const next = clamp(scale * factor, MIN_SCALE, MAX_SCALE);
+      const ratio = next / scale;
+      tx = anchor.x - (anchor.x - tx) * ratio;
+      ty = anchor.y - (anchor.y - ty) * ratio;
+      scale = next;
+      apply();
+    };
+
+    const stageAnchor = (clientX: number, clientY: number): Point => {
+      const r = stage.getBoundingClientRect();
+      return { x: clientX - r.left, y: clientY - r.top };
+    };
+
+    const centerAnchor = (): Point => {
+      const r = stage.getBoundingClientRect();
+      return { x: r.width / 2, y: r.height / 2 };
+    };
+
+    // --- toolbar ---
+    overlay.querySelectorAll<HTMLElement>("[data-mzo-action]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const action = btn.dataset.mzoAction;
+        if (action === "close") close();
+        else if (action === "zoom-in") zoomAt(centerAnchor(), 1.3);
+        else if (action === "zoom-out") zoomAt(centerAnchor(), 1 / 1.3);
+        else if (action === "reset") {
+          const child = content.firstElementChild as SVGElement | null;
+          if (child && lastTrigger) {
+            const svg = lastTrigger
+              .closest("pre.mermaid")
+              ?.querySelector("svg") as SVGElement | null;
+            if (svg) openWith(svg, lastTrigger);
+          }
+        }
+      });
+    });
+
+    // Backdrop click closes (but not drags on the stage).
+    overlay.addEventListener("pointerdown", (e) => {
+      if (e.target === overlay) close();
+    });
+
+    // --- wheel zoom ---
+    stage.addEventListener(
+      "wheel",
+      (e) => {
+        e.preventDefault();
+        const factor = Math.exp(-e.deltaY * 0.0015);
+        zoomAt(stageAnchor(e.clientX, e.clientY), factor);
+      },
+      { passive: false },
+    );
+
+    // --- pointer pan + pinch ---
+    stage.addEventListener("pointerdown", (e) => {
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      stage.setPointerCapture(e.pointerId);
+      stage.classList.add("is-panning");
+      if (pointers.size === 2) {
+        const pts = [...pointers.values()];
+        pinchDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+        pinchMid = stageAnchor((pts[0].x + pts[1].x) / 2, (pts[0].y + pts[1].y) / 2);
+      }
+    });
+
+    stage.addEventListener("pointermove", (e) => {
+      const prev = pointers.get(e.pointerId);
+      if (!prev) return;
+      const cur = { x: e.clientX, y: e.clientY };
+      pointers.set(e.pointerId, cur);
+
+      if (pointers.size === 2) {
+        const pts = [...pointers.values()];
+        const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+        if (pinchDist > 0) {
+          const mid = stageAnchor((pts[0].x + pts[1].x) / 2, (pts[0].y + pts[1].y) / 2);
+          // Pan by the midpoint drift, then zoom by the distance ratio.
+          tx += mid.x - pinchMid.x;
+          ty += mid.y - pinchMid.y;
+          pinchMid = mid;
+          zoomAt(mid, dist / pinchDist);
+        }
+        pinchDist = dist;
+      } else if (pointers.size === 1) {
+        tx += cur.x - prev.x;
+        ty += cur.y - prev.y;
+        apply();
+      }
+    });
+
+    const endPointer = (e: PointerEvent) => {
+      pointers.delete(e.pointerId);
+      if (pointers.size < 2) pinchDist = 0;
+      if (pointers.size === 0) stage.classList.remove("is-panning");
+    };
+    stage.addEventListener("pointerup", endPointer);
+    stage.addEventListener("pointercancel", endPointer);
+
+    document.addEventListener("keydown", (e) => {
+      if (overlay.hidden) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "+" || e.key === "=") zoomAt(centerAnchor(), 1.3);
+      else if (e.key === "-") zoomAt(centerAnchor(), 1 / 1.3);
+    });
+
+    // --- enhance rendered diagrams ---
+    const enhance = (pre: HTMLElement) => {
+      if (pre.dataset.zoomReady === "true") return;
+      const svg = pre.querySelector("svg");
+      if (!svg) return;
+      pre.dataset.zoomReady = "true";
+      if (getComputedStyle(pre).position === "static") {
+        pre.style.position = "relative";
+      }
+
+      const trigger = document.createElement("button");
+      trigger.type = "button";
+      trigger.className = "mermaid-zoom-trigger";
+      trigger.setAttribute("aria-label", "Open diagram in full-screen viewer");
+      trigger.innerHTML = '<span aria-hidden="true">&#10530;</span> Zoom';
+      trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openWith(svg, trigger);
+      });
+      pre.appendChild(trigger);
+
+      pre.addEventListener("click", (e) => {
+        // Ignore clicks on the trigger itself and text selections.
+        if ((e.target as HTMLElement).closest(".mermaid-zoom-trigger")) return;
+        if (window.getSelection()?.toString()) return;
+        openWith(svg, trigger);
+      });
+    };
+
+    const scan = () => {
+      document.querySelectorAll<HTMLElement>("pre.mermaid").forEach(enhance);
+    };
+
+    // Mermaid renders asynchronously; watch for SVGs landing in the DOM.
+    const observer = new MutationObserver(() => scan());
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    scan();
+    document.addEventListener("astro:page-load", scan);
+    document.addEventListener("astro:after-swap", () => {
+      close();
+      scan();
+    });
+  }
+</script>
