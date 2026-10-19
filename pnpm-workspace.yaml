@@ -13,6 +13,8 @@ overrides:
   dompurify@<=3.4.6: '>=3.4.7'
   dompurify@>=3.0.0 <=3.4.7: '>=3.4.8'
   esbuild@>=0.27.3 <0.28.1: '>=0.28.1'
+  # <0.19 stays on the 0.18 line mermaid 12 uses; mermaid 11 pins ^0.16 but only calls renderToString
+  katex@>=0.11.0 <0.18.2: '>=0.18.2 <0.19'
   # <5 keeps the security backport while avoiding the ESM-only v5 major,
   # which drops the default export that astro's `import yaml from "js-yaml"` needs
   js-yaml@>=4.0.0 <=4.1.1: '>=4.2.0 <5'
